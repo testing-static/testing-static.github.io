@@ -150,17 +150,8 @@
     <div class="site-section">
       <div class="container">
         <div class="row align-items-center">
-          <div class="col-md-6 mb-5 mb-md-0">
-            
-              <div class="img-border">
-                <a href="https://vimeo.com/28959265" class="popup-vimeo image-play">
-                  <span class="icon-wrap">
-                    <span class="icon icon-play"></span>
-                  </span>
-                  <img src="images/img_2.jpg" alt="" class="img-fluid">
-                </a>
-              </div>              
-            
+          <div class="col-md-6 mb-5 mb-md-0">                          
+            <iframe onload="resizeIframe(this)" style="width: 100%;" src="https://www.youtube.com/embed/yNAu-w8T-fM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                              
           </div>
           <div class="col-md-5 ml-auto">
             
@@ -444,6 +435,7 @@
               }
           });
 
+    // function to count
     function countUp() {
       $('.count').each(function() {
           $(this).prop('Counter', 0).animate({
@@ -478,6 +470,13 @@
           }
         })
       })
+
+      // video size
+      function resizeIframe(obj) {
+        obj.style.height = '22' + 'em';
+      }
+
+      </script>
   </script>
 
   </body>
