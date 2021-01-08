@@ -1440,3 +1440,50 @@ a {
   height: 25em;
   object-fit: cover;
 }
+
+.site-blocks-cover-2 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; }
+  .site-blocks-cover-2.overlay {
+    position: relative; }
+    .site-blocks-cover-2.overlay:before {
+      position: absolute;
+      content: "";
+      left: 0;
+      bottom: 0;
+      right: 0;
+      top: 0;
+      background: rgba(0, 0, 0, 0.4); }
+  .site-blocks-cover-2, .site-blocks-cover-2 .row {
+    min-height: 300px;
+    height: calc(70vh); }
+  .site-blocks-cover-2.inner-page, .site-blocks-cover-2.inner-page .row {
+    min-height: 300px;
+    height: calc(30vh); }
+  .site-blocks-cover-2 .sub-text {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.7);
+    letter-spacing: .2em; }
+  .site-blocks-cover-2 h1 {
+    color: #fff;
+    font-size: 3rem;
+    font-family: "Playfair Display"; }
+    @media (min-width: 768px) {
+      .site-blocks-cover-2 h1 {
+        font-size: 4rem;
+        font-weight: 900;
+        line-height: 1.2; } }
+  .site-blocks-cover-2 p {
+    color: #fff;
+    font-size: 1.5rem;
+    line-height: 1.5; }
+  .site-blocks-cover-2 .intro-text {
+    font-size: 16px;
+    line-height: 1.5; }
+
+.sub-main{
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
