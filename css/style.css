@@ -1487,3 +1487,11 @@ a {
   margin-top: 3em;
   margin-bottom: 3em;
 }
+
+.zoom{
+  transition: transform .2s; /* Animation */
+}
+
+.zoom:hover{
+  transform: scale(1.2);
+}
