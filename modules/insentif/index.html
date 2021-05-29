@@ -1,0 +1,3563 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="id" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>2. INSENTIF &mdash; Dokumentasi MyUMS 2019</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Indeks" href="../../genindex.html" />
+    <link rel="search" title="Pencarian" href="../../search.html" />
+    <link rel="next" title="3. PROFIL" href="../profil/index.html" />
+    <link rel="prev" title="1. PID" href="../pid/index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> MyUMS
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../pid/index.html">1. PID</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">2. INSENTIF</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#a-context-diagram">A. Context Diagram</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#b-class-diagram">B. Class Diagram</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#c-use-case">C. Use Case</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#c-1-gambar-use-case-diagram">C.1. Gambar Use Case Diagram</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#c-2-tabel-use-case">C.2. Tabel Use Case</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#c-3-detail-use-case-diagram">C.3. Detail Use Case Diagram</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#uc-001">01. UC-001</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#uc-002">02. UC-002</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#uc-003">03. UC-003</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#uc-004">04. UC-004</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#uc-005">05. UC-005</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#uc-006">06. UC-006</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#uc-007">07. UC-007</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#uc-008">08. UC-008</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#uc-009">09. UC-009</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#uc-010">10. UC-010</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#uc-011">11. UC-011</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#uc-012">12. UC-012</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#uc-013">13. UC-013</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#uc-014">14. UC-014</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#uc-015">15. UC-015</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#uc-016">16. UC-016</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#uc-017">17. UC-017</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#module-insentif.views">D. Halaman Views</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#e-user-guide">E. User Guide</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../profil/index.html">3. PROFIL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../monitoring/index.html">4. MONITORING</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sipas/index.html">5. SIPAS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about.html">Tentang MyUMS</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">MyUMS</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>2. INSENTIF</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../../_sources/modules/insentif/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="insentif">
+<h1>2. INSENTIF<a class="headerlink" href="#insentif" title="Link permanen untuk headline ini">¶</a></h1>
+<div class="section" id="a-context-diagram">
+<h2>A. Context Diagram<a class="headerlink" href="#a-context-diagram" title="Link permanen untuk headline ini">¶</a></h2>
+<a class="reference internal image-reference" href="../../_images/context-diagram.png"><img alt="../../_images/context-diagram.png" src="../../_images/context-diagram.png" style="width: 600px;" /></a>
+</div>
+<div class="section" id="b-class-diagram">
+<h2>B. Class Diagram<a class="headerlink" href="#b-class-diagram" title="Link permanen untuk headline ini">¶</a></h2>
+<a class="reference internal image-reference" href="../../_images/class-diagram.png"><img alt="../../_images/class-diagram.png" src="../../_images/class-diagram.png" style="width: 600px;" /></a>
+</div>
+<div class="section" id="c-use-case">
+<h2>C. Use Case<a class="headerlink" href="#c-use-case" title="Link permanen untuk headline ini">¶</a></h2>
+<div class="section" id="c-1-gambar-use-case-diagram">
+<h3>C.1. Gambar Use Case Diagram<a class="headerlink" href="#c-1-gambar-use-case-diagram" title="Link permanen untuk headline ini">¶</a></h3>
+<a class="reference internal image-reference" href="../../_images/use-case.png"><img alt="../../_images/use-case.png" src="../../_images/use-case.png" style="width: 600px;" /></a>
+</div>
+<div class="section" id="c-2-tabel-use-case">
+<h3>C.2. Tabel Use Case<a class="headerlink" href="#c-2-tabel-use-case" title="Link permanen untuk headline ini">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>No</p></th>
+<th class="head"><p>Kode Use Case</p></th>
+<th class="head"><p>Nama Use Case</p></th>
+<th class="head"><p>Keterangan</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>UC-001</p></td>
+<td><p>Melakukan login</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>UC-002</p></td>
+<td><p>Mengajukan usulan insentif</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>UC-003</p></td>
+<td><p>Melihat daftar ajuan insentif</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>UC-004</p></td>
+<td><p>Mengedit data ajuan insentif</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>5</p></td>
+<td><p>UC-005</p></td>
+<td><p>Menghapus ajuan insentif</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>6</p></td>
+<td><p>UC-006</p></td>
+<td><p>Melihat catatan revisi atau catatan penolakan ajuan insentif</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>7</p></td>
+<td><p>UC-007</p></td>
+<td><p>Mengupload revisi ajuan insentif</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>8</p></td>
+<td><p>UC-008</p></td>
+<td><p>Melihat dokumen terlampir ajuan insentif</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>9</p></td>
+<td><p>UC-009</p></td>
+<td><p>Mengapprove ajuan insentif</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>10</p></td>
+<td><p>UC-010</p></td>
+<td><p>Melihat daftar ajuan insentif yang harus direview</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>11</p></td>
+<td><p>UC-011</p></td>
+<td><p>Melihat daftar ajuan insentif yang disetujui</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>12</p></td>
+<td><p>UC-012</p></td>
+<td><p>Melihat daftar ajuan insentif yang revisi</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>13</p></td>
+<td><p>UC-013</p></td>
+<td><p>Melihat daftar ajuan insentif yang ditolak</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>14</p></td>
+<td><p>UC-014</p></td>
+<td><p>Membatalkan approval ajuan insentif</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>15</p></td>
+<td><p>UC-015</p></td>
+<td><p>Melihat daftar SPPD</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>16</p></td>
+<td><p>UC-016</p></td>
+<td><p>Menerbitkan SPPD</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>17</p></td>
+<td><p>UC-017</p></td>
+<td><p>Mencetak SPPD</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="c-3-detail-use-case-diagram">
+<h3>C.3. Detail Use Case Diagram<a class="headerlink" href="#c-3-detail-use-case-diagram" title="Link permanen untuk headline ini">¶</a></h3>
+<div class="section" id="uc-001">
+<h4>01. UC-001<a class="headerlink" href="#uc-001" title="Link permanen untuk headline ini">¶</a></h4>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Use Case Identification and History</p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Use Case ID:</p></td>
+<td><p>UC-001</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Use Case Name:</p></td>
+<td><p>Melakukan Login</p></td>
+<td><p>Version No:</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p>End Objective:</p></td>
+<td><p>User berhasil Login</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Created By:</p></td>
+<td><p>BTI</p></td>
+<td><p>On (date):</p></td>
+<td><p>22 Mei 2021</p></td>
+</tr>
+<tr class="row-even"><td><p>Last Updated By:</p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>User/Actor:</p></td>
+<td><p>Dosen / Kaprodi / Dekan / LPPI / WR I / WR II / Keuangan</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Business Owner:</p></td>
+<td><p>UMS</p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Preconditions</p></td>
+</tr>
+<tr class="row-even"><td><p>Sistem menampilkan form login.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Basic Flow</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Step</p></td>
+<td><p>User Actions</p></td>
+<td><p>System Actions</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>User login  menggunakan CAS dengan menginputkan UniID/NIM dan password.</p></td>
+<td><p>Sistem mengautentifikasi yang sudah diinputkan oleh user.</p></td>
+</tr>
+<tr class="row-even"><td><p>2</p></td>
+<td><p>User mengklik button Login.</p></td>
+<td><p>Sistem menampilkan menu sesuai dengan akses level.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Alternate Flow</p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Step</p></td>
+<td><p>User Actions</p></td>
+<td><p>System Actions</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>User  mengklik button masuk dengan google.</p></td>
+<td><p>Sistem menampilkan form login menggunakan akun google.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>2</p></td>
+<td><p>User memilih akun google yang akan digunakan.</p></td>
+<td><p>Sistem memberikan konfirmasi keberhasilan login dengan sebuah message box</p></td>
+<td><p>kemudian menampilkan halaman utama MyUMS yang berisi tombol untuk menuju ke menu lain.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Exception Flow</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Step</p></td>
+<td><p>User Actions</p></td>
+<td><p>System Actions</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>UniID/NIM dan password tidak valid.</p></td>
+<td><p>Sistem memberikan peringatan berupa pop-up bahwa UniID/NIM dan password tidak sesuai.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Post conditions</p></td>
+</tr>
+<tr class="row-even"><td><p>Sistem memberikan konfirmasi keberhasilan login dengan sebuah message box kemudian menampilkan halaman utama MyUMS yang berisi tombol untuk menuju ke menu yang lain.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Special Requirements</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Business Rules</p></td>
+</tr>
+<tr class="row-even"><td><p>Untuk login hanya bisa diakses oleh user pada unit yang ada di UMS saja.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Other Notes (Assumptions, Issues,)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="uc-002">
+<h4>02. UC-002<a class="headerlink" href="#uc-002" title="Link permanen untuk headline ini">¶</a></h4>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Use Case Identification and History</p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Use Case ID:</p></td>
+<td><p>UC-002</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Use Case Name:</p></td>
+<td><p>Mengajukan Usulan Insentif</p></td>
+<td><p>Version No:</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p>End Objective:</p></td>
+<td><p>Berhasil mengajukan usulan insentif</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Created By:</p></td>
+<td><p>BTI</p></td>
+<td><p>On (date):</p></td>
+<td><p>22 Mei 2021</p></td>
+</tr>
+<tr class="row-even"><td><p>Last Updated By:</p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>User/Actor:</p></td>
+<td><p>Dosen / Kaprodi</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Business Owner:</p></td>
+<td><p>UMS</p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Preconditions</p></td>
+</tr>
+<tr class="row-even"><td><p>User telah login dan berada disalah satu halaman sub menu insentif akademik.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Basic Flow</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Step</p></td>
+<td><p>User Actions</p></td>
+<td><p>System Actions</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>User mengklik button ajukan usulan insentif baru.</p></td>
+<td><p>Sistem menampilkan form pengajuan usulan insentif baru.</p></td>
+</tr>
+<tr class="row-even"><td><p>2</p></td>
+<td><p>User menginputkan data sesuai dengan form dan mengupload file pengajuan yang dibutuhkan.</p></td>
+<td><p>Sistem merekam data yang diinputkan user.</p></td>
+</tr>
+<tr class="row-odd"><td><p>3</p></td>
+<td><p>User mengklik button ajukan insentif.</p></td>
+<td><p>Sistem menyimpan, menampilkan data usulan insentif baru, dan user menunggu approval dari Kaprodi, LPPI, WR I, dan WR II.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Alternate Flow</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Step</p></td>
+<td><p>User Actions</p></td>
+<td><p>System Actions</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Exception Flow</p></td>
+<td><p>Exception Flow</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Step</p></td>
+<td><p>User Actions</p></td>
+<td><p>System Actions</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>User tidak menginputkan satu atau lebih kolom dalam form pengajuan insentif akademik.</p></td>
+<td><p>Sistem memberikan alert bahwa user belum menginputkan data pada form.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Post conditions</p></td>
+</tr>
+<tr class="row-even"><td><p>User berhasil mengajukan usulan insentif baru.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Special Requirements</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Business Rules</p></td>
+</tr>
+<tr class="row-even"><td><p>Semua kolom pada form ajuan insentif akademik harus diisi semua.</p></td>
+</tr>
+<tr class="row-odd"><td><p>User bisa mengajukan ajuan insentif sebanyak-banyaknya.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Other Notes (Assumptions, Issues,)</p></td>
+</tr>
+<tr class="row-even"><td><p>Terdapat 5 kategori pilihan ajuan insentif didalam sub-menu insentif akademik, yaitu jurnal, prosiding, koran, book, book chapter, dan keynote speaker (arsip).</p></td>
+</tr>
+<tr class="row-odd"><td><p>User bisa memilih ajuan insentif yang dikehendaki.</p></td>
+</tr>
+<tr class="row-even"><td><p>Insentif keynote speaker (arsip) tidaak membutuhkan approval dari admin insentif.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="uc-003">
+<h4>03. UC-003<a class="headerlink" href="#uc-003" title="Link permanen untuk headline ini">¶</a></h4>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Use Case Identification and History</p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Use Case ID:</p></td>
+<td><p>UC-003</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Use Case Name:</p></td>
+<td><p>Melihat Daftar Ajuan Insentif</p></td>
+<td><p>Version No:</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p>End Objective:</p></td>
+<td><p>Berhasil melihat daftar ajuan insentif yang telah diajukan</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Created By:</p></td>
+<td><p>BTI</p></td>
+<td><p>On (date):</p></td>
+<td><p>22 Mei 2021</p></td>
+</tr>
+<tr class="row-even"><td><p>Last Updated By:</p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>User/Actor:</p></td>
+<td><p>Dosen / Kaprodi</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Business Owner:</p></td>
+<td><p>UMS</p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Preconditions</p></td>
+</tr>
+<tr class="row-even"><td><p>User sudah login dan berada pada salah satu sub-menu insentif akademik.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Basic Flow</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Step</p></td>
+<td><p>User Actions</p></td>
+<td><p>System Actions</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>User mengklik salah satu sub-menu insentif akademik.</p></td>
+<td><p>Sistem menampilkan halaman sub-menu yang berisi daftar ajuan insentfi akademik yang telah diajukan user.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Alternate Flow</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Step</p></td>
+<td><p>User Actions</p></td>
+<td><p>System Actions</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Exception Flow</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Step</p></td>
+<td><p>User Actions</p></td>
+<td><p>System Actions</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Post conditions</p></td>
+</tr>
+<tr class="row-even"><td><p>User melihat list daftar ajuan insentif yang telah diajukan user.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Special Requirements</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Business Rules</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Other Notes (Assumptions, Issues,)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="uc-004">
+<h4>04. UC-004<a class="headerlink" href="#uc-004" title="Link permanen untuk headline ini">¶</a></h4>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Use Case Identification and History</p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Use Case ID:</p></td>
+<td><p>UC-004</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Use Case Name:</p></td>
+<td><p>Mengedit Data Ajuan Insentif</p></td>
+<td><p>Version No:</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p>End Objective:</p></td>
+<td><p>Berhasil mengedit data ajuan insentif</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Created By:</p></td>
+<td><p>BTI</p></td>
+<td><p>On (date):</p></td>
+<td><p>22 Mei 2021</p></td>
+</tr>
+<tr class="row-even"><td><p>Last Updated By:</p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>User/Actor:</p></td>
+<td><p>Dosen / Kaprodi</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Business Owner:</p></td>
+<td><p>UMS</p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Preconditions</p></td>
+</tr>
+<tr class="row-even"><td><p>User telah login dan user berada di halaman sub-menu insentif akademik.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Basic Flow</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Step</p></td>
+<td><p>User Actions</p></td>
+<td><p>System Actions</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>User mengklik button edit di kolom status pada ajuan insentif yang ingin diedit.</p></td>
+<td><p>Sistem menampilkan data dari ajuan insentif yang dipilih.</p></td>
+</tr>
+<tr class="row-even"><td><p>2</p></td>
+<td><p>User mengisi form edit data ajuan insentif yang ingin diubah.</p></td>
+<td><p>Sistem merekam inputan user.</p></td>
+</tr>
+<tr class="row-odd"><td><p>3</p></td>
+<td><p>User mengklik button simpan.</p></td>
+<td><p>Sistem menyimpan inputan user.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Alternate Flow</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Step</p></td>
+<td><p>User Actions</p></td>
+<td><p>System Actions</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Exception Flow</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Step</p></td>
+<td><p>User Actions</p></td>
+<td><p>System Actions</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Post conditions</p></td>
+</tr>
+<tr class="row-even"><td><p>User berhasil mengedit data ajuan insentif, baik digunakan untuk memperbaiki ataupun memperbarui informasi mengenai data ajuan insentif yang telah diedit secara otomatis tampil di sistem.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Special Requirements</p></td>
+</tr>
+<tr class="row-even"><td></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Business Rules</p></td>
+</tr>
+<tr class="row-even"><td></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Other Notes (Assumptions, Issues,)</p></td>
+</tr>
+<tr class="row-even"><td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="uc-005">
+<h4>05. UC-005<a class="headerlink" href="#uc-005" title="Link permanen untuk headline ini">¶</a></h4>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Use Case Identification and History</p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Use Case ID:</p></td>
+<td><p>UC-005</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Use Case Name:</p></td>
+<td><p>Menghapus Ajuan Insentif</p></td>
+<td><p>Version No:</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p>End Objective:</p></td>
+<td><p>Berhasil menghapus ajuan insentif</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Created By:</p></td>
+<td><p>BTI</p></td>
+<td><p>On (date):</p></td>
+<td><p>22 Mei 2021</p></td>
+</tr>
+<tr class="row-even"><td><p>Last Updated By:</p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>User/Actor:</p></td>
+<td><p>Dosen / Kaprodi</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Business Owner:</p></td>
+<td><p>UMS</p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Preconditions</p></td>
+</tr>
+<tr class="row-even"><td><p>User telah login dan user berada pada halaman sub-menu insentif akademik.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Basic Flow</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Step</p></td>
+<td><p>User Actions</p></td>
+<td><p>System Actions</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>User mengklik / memilih salah satu sub-menu insentif akademik</p></td>
+<td><p>Sistem menampilkan daftar ajuan insentif akademik.</p></td>
+</tr>
+<tr class="row-even"><td><p>2</p></td>
+<td><p>User mengklik button hapus pada ajuan insentif yang ingin dihapus.</p></td>
+<td><p>Sistem menampilkan message box untuk mengkonfirmasi penghapusan data ajuan.</p></td>
+</tr>
+<tr class="row-odd"><td><p>3</p></td>
+<td><p>User mengklik button okay.</p></td>
+<td><p>Sistem menghapus data ajuan insentif dari daftar ajuan insentif.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Alternate Flow</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Step</p></td>
+<td><p>User Actions</p></td>
+<td><p>System Actions</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Exception Flow</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Step</p></td>
+<td><p>User Actions</p></td>
+<td><p>System Actions</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Post conditions</p></td>
+</tr>
+<tr class="row-even"><td><p>User berhasil menghapus data ajuan insentif yang diinginkan.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Special Requirements</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Business Rules</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Other Notes (Assumptions, Issues,)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="uc-006">
+<h4>06. UC-006<a class="headerlink" href="#uc-006" title="Link permanen untuk headline ini">¶</a></h4>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Use Case Identification and History</p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Use Case ID:</p></td>
+<td><p>UC-006</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Use Case Name:</p></td>
+<td><p>Melihat Catatan Revisi atau Catatan Penolakan Ajuan Insentif</p></td>
+<td><p>Version No:</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p>End Objective:</p></td>
+<td><p>Berhasil melihat catatan revisi atau catatan penolakan ajuan insentif</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Created By:</p></td>
+<td><p>BTI</p></td>
+<td><p>On (date):</p></td>
+<td><p>22 Mei 2021</p></td>
+</tr>
+<tr class="row-even"><td><p>Last Updated By:</p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>User/Actor:</p></td>
+<td><p>Dosen / Kaprodi / Dekan / LPPI / WR I / WR II</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Business Owner:</p></td>
+<td><p>UMS</p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Preconditions</p></td>
+</tr>
+<tr class="row-even"><td><p>User telah login dan user berada disalah satu halaman sub-menu insentif akademik.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Basic Flow</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Step</p></td>
+<td><p>User Actions</p></td>
+<td><p>System Actions</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>User mengklik button catatan revisi untuk ajuan insentif yang berstatus revisi, atau mengklik button catatan penolakan untuk ajuan yang berstatus ditolak.</p></td>
+<td><p>Sistem menampilkan pop-up yang berisi catatan revisi atau catatan penolakan ajuan insentif.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Alternate Flow</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Step</p></td>
+<td><p>User Actions</p></td>
+<td><p>System Actions</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Exception Flow</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Step</p></td>
+<td><p>User Actions</p></td>
+<td><p>System Actions</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Post conditions</p></td>
+</tr>
+<tr class="row-even"><td><p>User melihat catatan revisi atau catatan penolakan yang diberikan oleh admin insentif.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Special Requirements</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Business Rules</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Other Notes (Assumptions, Issues,)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="uc-007">
+<h4>07. UC-007<a class="headerlink" href="#uc-007" title="Link permanen untuk headline ini">¶</a></h4>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Use Case Identification and History</p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Use Case ID:</p></td>
+<td><p>UC-007</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Use Case Name:</p></td>
+<td><p>Mengupload Revisi Ajuan Insentif</p></td>
+<td><p>Version No:</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p>End Objective:</p></td>
+<td><p>Berhasil mengupload revisi ajuan insentif</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Created By:</p></td>
+<td><p>BTI</p></td>
+<td><p>On (date):</p></td>
+<td><p>22 Mei 2021</p></td>
+</tr>
+<tr class="row-even"><td><p>Last Updated By:</p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>User/Actor:</p></td>
+<td><p>Dosen / Kaprodi</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Business Owner:</p></td>
+<td><p>UMS</p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Preconditions</p></td>
+</tr>
+<tr class="row-even"><td><p>Sistem menampilkan daftar ajuan insentif.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Basic Flow</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Step</p></td>
+<td><p>User Actions</p></td>
+<td><p>System Actions</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>User mengklik button perbaiki dikolom status pada ajuan yang direvisi.</p></td>
+<td><p>Sistem menampilkan form perbaikan ajuan insentif akademik.</p></td>
+</tr>
+<tr class="row-even"><td><p>2</p></td>
+<td><p>User menginputkan data ajuan insentif yang direvisi.</p></td>
+<td><p>Sistem merekam inputan user.</p></td>
+</tr>
+<tr class="row-odd"><td><p>3</p></td>
+<td><p>User mengklik button simpan.</p></td>
+<td><p>Sistem menyimpan inputan data user dan menampilkan data yang ada pada insentif akademik.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Alternate Flow</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Step</p></td>
+<td><p>User Actions</p></td>
+<td><p>System Actions</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Exception Flow</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Step</p></td>
+<td><p>User Actions</p></td>
+<td><p>System Actions</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Post conditions</p></td>
+</tr>
+<tr class="row-even"><td><p>User berhasil mengupload ajuan insentif yang telah direvisi.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Special Requirements</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Business Rules</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Other Notes (Assumptions, Issues,)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="uc-008">
+<h4>08. UC-008<a class="headerlink" href="#uc-008" title="Link permanen untuk headline ini">¶</a></h4>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Use Case Identification and History</p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Use Case ID:</p></td>
+<td><p>UC-008</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Use Case Name:</p></td>
+<td><p>Melihat Dokumen Terlampir Ajuan Insentif</p></td>
+<td><p>Version No:</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p>End Objective:</p></td>
+<td><p>Berhasil melihat dokumen terlampir pada ajuan insentif</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Created By:</p></td>
+<td><p>BTI</p></td>
+<td><p>On (date):</p></td>
+<td><p>22 Mei 2021</p></td>
+</tr>
+<tr class="row-even"><td><p>Last Updated By:</p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>User/Actor:</p></td>
+<td><p>Dosen / Kaprodi / Dekan / LPPI / WR I / WR II</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Business Owner:</p></td>
+<td><p>UMS</p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Preconditions</p></td>
+</tr>
+<tr class="row-even"><td><p>User telah login dan user berada pada halaman sub menu insentif akademik atau admin insentif.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Basic Flow</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Step</p></td>
+<td><p>User Actions</p></td>
+<td><p>System Actions</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>User mengklik link pada kolom dokumen.</p></td>
+<td><p>Sistem menampilkan file dokumen yang terlampir dari ajuan insentif.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Alternate Flow</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Step</p></td>
+<td><p>User Actions</p></td>
+<td><p>System Actions</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Exception Flow</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Step</p></td>
+<td><p>User Actions</p></td>
+<td><p>System Actions</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Post conditions</p></td>
+</tr>
+<tr class="row-even"><td><p>User melihat file dokumen yang terlampir pada ajuan insentif.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Special Requirements</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Business Rules</p></td>
+</tr>
+<tr class="row-even"><td><p>File dokumen terlampir hanya bisa dilihat jika pengusul mengajukan ajuan insentif akademik.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Other Notes (Assumptions, Issues,)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="uc-009">
+<h4>09. UC-009<a class="headerlink" href="#uc-009" title="Link permanen untuk headline ini">¶</a></h4>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Use Case Identification and History</p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Use Case ID:</p></td>
+<td><p>UC-009</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Use Case Name:</p></td>
+<td><p>Mengapprove Ajuan Insentif</p></td>
+<td><p>Version No:</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p>End Objective:</p></td>
+<td><p>Berhasil memberikan approve ajuan insentif</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Created By:</p></td>
+<td><p>BTI</p></td>
+<td><p>On (date):</p></td>
+<td><p>22 Mei 2021</p></td>
+</tr>
+<tr class="row-even"><td><p>Last Updated By:</p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>User/Actor:</p></td>
+<td><p>Kaprodi / Dekan / LPPI / WR I / WR II</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Business Owner:</p></td>
+<td><p>UMS</p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Preconditions</p></td>
+</tr>
+<tr class="row-even"><td><p>User telah login dan user berada di salah satu halaman sub-menu admin insentif.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Basic Flow</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Step</p></td>
+<td><p>User Actions</p></td>
+<td><p>System Actions</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>User mengklik salah satu sub-menu admin insentif.</p></td>
+<td><p>Sistem menampilkan daftar ajuan insentif yang akan di review.</p></td>
+</tr>
+<tr class="row-even"><td><p>2</p></td>
+<td><p>User mengklik button approve pada kolom progress ajuan.</p></td>
+<td><p>Sistem menampilkan halaman approval yang berisis detail dari ajuan insentif.</p></td>
+</tr>
+<tr class="row-odd"><td><p>3</p></td>
+<td><p>User menuliskan komentar atau hasil review di kolom tuliskan catatan hasil review.</p></td>
+<td><p>sistem merekam inputan user.</p></td>
+</tr>
+<tr class="row-even"><td><p>4</p></td>
+<td><p>User mengklik button ajukan.</p></td>
+<td><p>Sistem menyimpan hasil approval user.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Alternate Flow</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Step</p></td>
+<td><p>User Actions</p></td>
+<td><p>System Actions</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>User mengklik button revisi.</p></td>
+<td><p>Sistem akan menyimpan hasil approval user berupa revisi pengajuan insentif kepada pengusul.</p></td>
+</tr>
+<tr class="row-even"><td><p>2</p></td>
+<td><p>User mengklik button tolak.</p></td>
+<td><p>Sistem akan menyimpan hasil approval user berupa tolakan pengajuan insentif pengusul dan proses pengajuan akan berhenti.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Exception Flow</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Step</p></td>
+<td><p>User Actions</p></td>
+<td><p>System Actions</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Post conditions</p></td>
+</tr>
+<tr class="row-even"><td><p>User berhasil memberikan keputusan terkait approval ajuan insentif.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Special Requirements</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Business Rules</p></td>
+</tr>
+<tr class="row-even"><td><p>Proses approval ajuan insentif hanya bisa dilakukan oleh admin insentif.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Other Notes (Assumptions, Issues,)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="uc-010">
+<h4>10. UC-010<a class="headerlink" href="#uc-010" title="Link permanen untuk headline ini">¶</a></h4>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Use Case Identification and History</p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Use Case ID:</p></td>
+<td><p>UC-010</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Use Case Name:</p></td>
+<td><p>Melihat Daftar Ajuan Insentif Yang Harus Direview</p></td>
+<td><p>Version No:</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p>End Objective:</p></td>
+<td><p>Berhasil melihat daftar ajuan insentif yang harus direview</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Created By:</p></td>
+<td><p>BTI</p></td>
+<td><p>On (date):</p></td>
+<td><p>22 Mei 2021</p></td>
+</tr>
+<tr class="row-even"><td><p>Last Updated By:</p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>User/Actor:</p></td>
+<td><p>Kaprodi / Dekan / LPPI / WR I / WR II</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Business Owner:</p></td>
+<td><p>UMS</p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Preconditions</p></td>
+</tr>
+<tr class="row-even"><td><p>User berada disalah satu halaman sub-menu admin insentif.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Basic Flow</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Step</p></td>
+<td><p>User Actions</p></td>
+<td><p>System Actions</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>User mengklik salah satu sub-menu admin insentif.</p></td>
+<td><p>Sistem menampilkan daftar ajuan insentif untuk direview.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Alternate Flow</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Step</p></td>
+<td><p>User Actions</p></td>
+<td><p>System Actions</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Exception Flow</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Step</p></td>
+<td><p>User Actions</p></td>
+<td><p>System Actions</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Post conditions</p></td>
+</tr>
+<tr class="row-even"><td><p>User melihat daftar ajuan insentif yang harus direview direview.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Special Requirements</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Business Rules</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Other Notes (Assumptions, Issues,)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="uc-011">
+<h4>11. UC-011<a class="headerlink" href="#uc-011" title="Link permanen untuk headline ini">¶</a></h4>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Use Case Identification and History</p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Use Case ID:</p></td>
+<td><p>UC-011</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Use Case Name:</p></td>
+<td><p>Melihat Daftar Ajuan Insentif Yang Disetujui</p></td>
+<td><p>Version No:</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p>End Objective:</p></td>
+<td><p>Berhasil melihat daftar ajuan insentif yang disetujui</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Created By:</p></td>
+<td><p>BTI</p></td>
+<td><p>On (date):</p></td>
+<td><p>22 Mei 2021</p></td>
+</tr>
+<tr class="row-even"><td><p>Last Updated By:</p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>User/Actor:</p></td>
+<td><p>Kaprodi / Dekan / LPPI / WR I / WR II</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Business Owner:</p></td>
+<td><p>UMS</p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Preconditions</p></td>
+</tr>
+<tr class="row-even"><td><p>User telah login dan user berada disalah satu halaman sub-menu admin insentif.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Basic Flow</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Step</p></td>
+<td><p>User Actions</p></td>
+<td><p>System Actions</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>User mengklik tab disetujui.</p></td>
+<td><p>Sistem menampilkan daftar ajuan insentif yang sudah disetujui.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Alternate Flow</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Step</p></td>
+<td><p>User Actions</p></td>
+<td><p>System Actions</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Exception Flow</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Step</p></td>
+<td><p>User Actions</p></td>
+<td><p>System Actions</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Post conditions</p></td>
+</tr>
+<tr class="row-even"><td><p>User melihat daftar ajuan insentif yang sudah disetujui.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Special Requirements</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Business Rules</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Other Notes (Assumptions, Issues,)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="uc-012">
+<h4>12. UC-012<a class="headerlink" href="#uc-012" title="Link permanen untuk headline ini">¶</a></h4>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Use Case Identification and History</p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Use Case ID:</p></td>
+<td><p>UC-012</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Use Case Name:</p></td>
+<td><p>Melihat Daftar Ajuan Insentif Yang Revisi</p></td>
+<td><p>Version No:</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p>End Objective:</p></td>
+<td><p>Berhasil melihat daftar ajuan insentif yang perlu direvisi penggusul</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Created By:</p></td>
+<td><p>BTI</p></td>
+<td><p>On (date):</p></td>
+<td><p>22 Mei 2021</p></td>
+</tr>
+<tr class="row-even"><td><p>Last Updated By:</p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>User/Actor:</p></td>
+<td><p>Kaprodi / Dekan / LPPI / WR I / WR II</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Business Owner:</p></td>
+<td><p>UMS</p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Preconditions</p></td>
+</tr>
+<tr class="row-even"><td><p>User berada disalah satu halaman admin insentif.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Basic Flow</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Step</p></td>
+<td><p>User Actions</p></td>
+<td><p>System Actions</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>User mengklik tab revisi.</p></td>
+<td><p>Sistem menampilkan daftar ajuan insentif yang perlu direvisi oleh pengusul.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Alternate Flow</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Step</p></td>
+<td><p>User Actions</p></td>
+<td><p>System Actions</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Exception Flow</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Step</p></td>
+<td><p>User Actions</p></td>
+<td><p>System Actions</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Post conditions</p></td>
+</tr>
+<tr class="row-even"><td><p>User melihat daftar ajuan insentif yang perlu direvisi pengusul.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Special Requirements</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Business Rules</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Other Notes (Assumptions, Issues,)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="uc-013">
+<h4>13. UC-013<a class="headerlink" href="#uc-013" title="Link permanen untuk headline ini">¶</a></h4>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Use Case Identification and History</p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Use Case ID:</p></td>
+<td><p>UC-013</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Use Case Name:</p></td>
+<td><p>Melihat Daftar Ajuan Insentif Yang Ditolak</p></td>
+<td><p>Version No:</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p>End Objective:</p></td>
+<td><p>Berhasil melihat daftar ajuan insentif yang ditolak</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Created By:</p></td>
+<td><p>BTI</p></td>
+<td><p>On (date):</p></td>
+<td><p>22 Mei 2021</p></td>
+</tr>
+<tr class="row-even"><td><p>Last Updated By:</p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>User/Actor:</p></td>
+<td><p>Kaprodi / Dekan / LPPI / WR I / WR II</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Business Owner:</p></td>
+<td><p>UMS</p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Preconditions</p></td>
+</tr>
+<tr class="row-even"><td><p>User telah login dan user berada disalah satu halaman dari admin insentif.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Basic Flow</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Step</p></td>
+<td><p>User Actions</p></td>
+<td><p>System Actions</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>User mengklik tab ditolak.</p></td>
+<td><p>Sistem menampilkan daftar ajuan insentif yang ditolak.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Alternate Flow</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Step</p></td>
+<td><p>User Actions</p></td>
+<td><p>System Actions</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Exception Flow</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Step</p></td>
+<td><p>User Actions</p></td>
+<td><p>System Actions</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Post conditions</p></td>
+</tr>
+<tr class="row-even"><td><p>User mengetahui dan melihat daftar ajuan insentif yang ditolak.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Special Requirements</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Business Rules</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Other Notes (Assumptions, Issues,)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="uc-014">
+<h4>14. UC-014<a class="headerlink" href="#uc-014" title="Link permanen untuk headline ini">¶</a></h4>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Use Case Identification and History</p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Use Case ID:</p></td>
+<td><p>UC-014</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Use Case Name:</p></td>
+<td><p>Membatalkan Approval Ajuan Insentif</p></td>
+<td><p>Version No:</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p>End Objective:</p></td>
+<td><p>Berhasil membatalkan approval ajuan insentif</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Created By:</p></td>
+<td><p>BTI</p></td>
+<td><p>On (date):</p></td>
+<td><p>22 Mei 2021</p></td>
+</tr>
+<tr class="row-even"><td><p>Last Updated By:</p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>User/Actor:</p></td>
+<td><p>Kaprodi / Dekan / LPPI / WR I / WR II</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Business Owner:</p></td>
+<td><p>UMS</p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Preconditions</p></td>
+</tr>
+<tr class="row-even"><td><p>User telah login dan user berada pada salah satu sub menu admin insentif.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Basic Flow</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Step</p></td>
+<td><p>User Actions</p></td>
+<td><p>System Actions</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>User mengklik button batalkan pada kolom progress ajuan.</p></td>
+<td><p>Sistem akan membatalkan proses approve yang dilakukan user.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Alternate Flow</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Step</p></td>
+<td><p>User Actions</p></td>
+<td><p>System Actions</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Exception Flow</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Step</p></td>
+<td><p>User Actions</p></td>
+<td><p>System Actions</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Post conditions</p></td>
+</tr>
+<tr class="row-even"><td><p>User berhasil membatalkan approval ajuan insentif.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Special Requirements</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Business Rules</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Other Notes (Assumptions, Issues,)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="uc-015">
+<h4>15. UC-015<a class="headerlink" href="#uc-015" title="Link permanen untuk headline ini">¶</a></h4>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Use Case Identification and History</p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Use Case ID:</p></td>
+<td><p>UC-015</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Use Case Name:</p></td>
+<td><p>Melihat Daftar SPPD</p></td>
+<td><p>Version No:</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p>End Objective:</p></td>
+<td><p>Berhasil melihat daftar  SPPD</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Created By:</p></td>
+<td><p>BTI</p></td>
+<td><p>On (date):</p></td>
+<td><p>22 Mei 2021</p></td>
+</tr>
+<tr class="row-even"><td><p>Last Updated By:</p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>User/Actor:</p></td>
+<td><p>Keuangan</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Business Owner:</p></td>
+<td><p>UMS</p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Preconditions</p></td>
+</tr>
+<tr class="row-even"><td><p>User telah login dan user berada dihalaman menu admin SPPD.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Basic Flow</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Step</p></td>
+<td><p>User Actions</p></td>
+<td><p>System Actions</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>User mengklik salah satu kategori pilihan pada sub-menu admin SPPD.</p></td>
+<td><p>Sistem menampilkan daftar ajuan insentif yang butuh SPPD.</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Alternate Flow</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Step</p></td>
+<td><p>User Actions</p></td>
+<td><p>System Actions</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Exception Flow</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Step</p></td>
+<td><p>User Actions</p></td>
+<td><p>System Actions</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Post conditions</p></td>
+</tr>
+<tr class="row-even"><td><p>User melihat daftar ajuan insentif yang butuh SPPD.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Special Requirements</p></td>
+</tr>
+<tr class="row-even"><td></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Business Rules</p></td>
+</tr>
+<tr class="row-even"><td></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Other Notes (Assumptions, Issues,)</p></td>
+</tr>
+<tr class="row-even"><td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="uc-016">
+<h4>16. UC-016<a class="headerlink" href="#uc-016" title="Link permanen untuk headline ini">¶</a></h4>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Use Case Identification and History</p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Use Case ID:</p></td>
+<td><p>UC-016</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Use Case Name:</p></td>
+<td><p>Menerbitkan SPPD</p></td>
+<td><p>Version No:</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p>End Objective:</p></td>
+<td><p>Berhasil menerbitkan SPPD</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Created By:</p></td>
+<td><p>BTI</p></td>
+<td><p>On (date):</p></td>
+<td><p>22 Mei 2021</p></td>
+</tr>
+<tr class="row-even"><td><p>Last Updated By:</p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>User/Actor:</p></td>
+<td><p>Keuangan</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Business Owner:</p></td>
+<td><p>UMS</p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Preconditions</p></td>
+</tr>
+<tr class="row-even"><td><p>User berada pada salah satu halaman sub-menu admin SPPD.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Basic Flow</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Step</p></td>
+<td><p>User Actions</p></td>
+<td><p>System Actions</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>User mengklik check box di ajuan yang akan diterbitkan SPPD-nya.</p></td>
+<td><p>Sistem menyimpan inputan user.</p></td>
+</tr>
+<tr class="row-even"><td><p>2</p></td>
+<td><p>User mengklik button terbitkan SPPD.</p></td>
+<td><p>Sistem menerbitkan SPPD.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Alternate Flow</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Step</p></td>
+<td><p>User Actions</p></td>
+<td><p>System Actions</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Exception Flow</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Step</p></td>
+<td><p>User Actions</p></td>
+<td><p>System Actions</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Post conditions</p></td>
+</tr>
+<tr class="row-even"><td><p>User berhasil menterbitkan SPPD.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Special Requirements</p></td>
+</tr>
+<tr class="row-even"><td></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Business Rules</p></td>
+</tr>
+<tr class="row-even"><td></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Other Notes (Assumptions, Issues,)</p></td>
+</tr>
+<tr class="row-even"><td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="uc-017">
+<h4>17. UC-017<a class="headerlink" href="#uc-017" title="Link permanen untuk headline ini">¶</a></h4>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Use Case Identification and History</p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Use Case ID:</p></td>
+<td><p>UC-017</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Use Case Name:</p></td>
+<td><p>Mencetak SPPD</p></td>
+<td><p>Version No:</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p>End Objective:</p></td>
+<td><p>Berhasil mencetak SPPD</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Created By:</p></td>
+<td><p>BTI</p></td>
+<td><p>On (date):</p></td>
+<td><p>22 Mei 2021</p></td>
+</tr>
+<tr class="row-even"><td><p>Last Updated By:</p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>User/Actor:</p></td>
+<td><p>Keuangan</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Business Owner:</p></td>
+<td><p>UMS</p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Preconditions</p></td>
+</tr>
+<tr class="row-even"><td><p>User sudah menterbitkan SPPD.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Basic Flow</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Step</p></td>
+<td><p>User Actions</p></td>
+<td><p>System Actions</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>User mengklik button cetak SPPD.</p></td>
+<td><p>Sistem mendownload file SPPD.</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Alternate Flow</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Step</p></td>
+<td><p>User Actions</p></td>
+<td><p>System Actions</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Exception Flow</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Step</p></td>
+<td><p>User Actions</p></td>
+<td><p>System Actions</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Post conditions</p></td>
+</tr>
+<tr class="row-even"><td><p>User berhasil mencetak / mendownload file SPPD.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Special Requirements</p></td>
+</tr>
+<tr class="row-even"><td></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Business Rules</p></td>
+</tr>
+<tr class="row-even"><td></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Other Notes (Assumptions, Issues,)</p></td>
+</tr>
+<tr class="row-even"><td></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="section" id="module-insentif.views">
+<span id="d-halaman-views"></span><h2>D. Halaman Views<a class="headerlink" href="#module-insentif.views" title="Link permanen untuk headline ini">¶</a></h2>
+<dl class="py function">
+<dt id="insentif.views.approvalBookChapter">
+<code class="sig-prename descclassname"><span class="pre">insentif.views.</span></code><code class="sig-name descname"><span class="pre">approvalBookChapter</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">id</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/insentif/views.html#approvalBookChapter"><span class="viewcode-link"><span class="pre">[sumber]</span></span></a><a class="headerlink" href="#insentif.views.approvalBookChapter" title="Link permanen untuk definisi ini">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="insentif.views.approvalBuku">
+<code class="sig-prename descclassname"><span class="pre">insentif.views.</span></code><code class="sig-name descname"><span class="pre">approvalBuku</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">id</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/insentif/views.html#approvalBuku"><span class="viewcode-link"><span class="pre">[sumber]</span></span></a><a class="headerlink" href="#insentif.views.approvalBuku" title="Link permanen untuk definisi ini">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="insentif.views.approvalKoran">
+<code class="sig-prename descclassname"><span class="pre">insentif.views.</span></code><code class="sig-name descname"><span class="pre">approvalKoran</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">id</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/insentif/views.html#approvalKoran"><span class="viewcode-link"><span class="pre">[sumber]</span></span></a><a class="headerlink" href="#insentif.views.approvalKoran" title="Link permanen untuk definisi ini">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="insentif.views.approvalSeminar">
+<code class="sig-prename descclassname"><span class="pre">insentif.views.</span></code><code class="sig-name descname"><span class="pre">approvalSeminar</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">id</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/insentif/views.html#approvalSeminar"><span class="viewcode-link"><span class="pre">[sumber]</span></span></a><a class="headerlink" href="#insentif.views.approvalSeminar" title="Link permanen untuk definisi ini">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="insentif.views.approvalTBI">
+<code class="sig-prename descclassname"><span class="pre">insentif.views.</span></code><code class="sig-name descname"><span class="pre">approvalTBI</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">id</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/insentif/views.html#approvalTBI"><span class="viewcode-link"><span class="pre">[sumber]</span></span></a><a class="headerlink" href="#insentif.views.approvalTBI" title="Link permanen untuk definisi ini">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="insentif.views.approveWR1">
+<code class="sig-prename descclassname"><span class="pre">insentif.views.</span></code><code class="sig-name descname"><span class="pre">approveWR1</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">id</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/insentif/views.html#approveWR1"><span class="viewcode-link"><span class="pre">[sumber]</span></span></a><a class="headerlink" href="#insentif.views.approveWR1" title="Link permanen untuk definisi ini">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="insentif.views.arsip_tbi">
+<code class="sig-prename descclassname"><span class="pre">insentif.views.</span></code><code class="sig-name descname"><span class="pre">arsip_tbi</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/insentif/views.html#arsip_tbi"><span class="viewcode-link"><span class="pre">[sumber]</span></span></a><a class="headerlink" href="#insentif.views.arsip_tbi" title="Link permanen untuk definisi ini">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="insentif.views.book_chapter">
+<code class="sig-prename descclassname"><span class="pre">insentif.views.</span></code><code class="sig-name descname"><span class="pre">book_chapter</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/insentif/views.html#book_chapter"><span class="viewcode-link"><span class="pre">[sumber]</span></span></a><a class="headerlink" href="#insentif.views.book_chapter" title="Link permanen untuk definisi ini">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="insentif.views.book_chapter_edit">
+<code class="sig-prename descclassname"><span class="pre">insentif.views.</span></code><code class="sig-name descname"><span class="pre">book_chapter_edit</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">id</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/insentif/views.html#book_chapter_edit"><span class="viewcode-link"><span class="pre">[sumber]</span></span></a><a class="headerlink" href="#insentif.views.book_chapter_edit" title="Link permanen untuk definisi ini">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="insentif.views.book_chapter_hapus">
+<code class="sig-prename descclassname"><span class="pre">insentif.views.</span></code><code class="sig-name descname"><span class="pre">book_chapter_hapus</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">id</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/insentif/views.html#book_chapter_hapus"><span class="viewcode-link"><span class="pre">[sumber]</span></span></a><a class="headerlink" href="#insentif.views.book_chapter_hapus" title="Link permanen untuk definisi ini">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="insentif.views.buku">
+<code class="sig-prename descclassname"><span class="pre">insentif.views.</span></code><code class="sig-name descname"><span class="pre">buku</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/insentif/views.html#buku"><span class="viewcode-link"><span class="pre">[sumber]</span></span></a><a class="headerlink" href="#insentif.views.buku" title="Link permanen untuk definisi ini">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="insentif.views.buku_edit">
+<code class="sig-prename descclassname"><span class="pre">insentif.views.</span></code><code class="sig-name descname"><span class="pre">buku_edit</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">id</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/insentif/views.html#buku_edit"><span class="viewcode-link"><span class="pre">[sumber]</span></span></a><a class="headerlink" href="#insentif.views.buku_edit" title="Link permanen untuk definisi ini">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="insentif.views.buku_hapus">
+<code class="sig-prename descclassname"><span class="pre">insentif.views.</span></code><code class="sig-name descname"><span class="pre">buku_hapus</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">id</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/insentif/views.html#buku_hapus"><span class="viewcode-link"><span class="pre">[sumber]</span></span></a><a class="headerlink" href="#insentif.views.buku_hapus" title="Link permanen untuk definisi ini">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="insentif.views.cancelApprovalBookChapter">
+<code class="sig-prename descclassname"><span class="pre">insentif.views.</span></code><code class="sig-name descname"><span class="pre">cancelApprovalBookChapter</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">id</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/insentif/views.html#cancelApprovalBookChapter"><span class="viewcode-link"><span class="pre">[sumber]</span></span></a><a class="headerlink" href="#insentif.views.cancelApprovalBookChapter" title="Link permanen untuk definisi ini">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="insentif.views.cancelApprovalBuku">
+<code class="sig-prename descclassname"><span class="pre">insentif.views.</span></code><code class="sig-name descname"><span class="pre">cancelApprovalBuku</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">id</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/insentif/views.html#cancelApprovalBuku"><span class="viewcode-link"><span class="pre">[sumber]</span></span></a><a class="headerlink" href="#insentif.views.cancelApprovalBuku" title="Link permanen untuk definisi ini">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="insentif.views.cancelApprovalKoran">
+<code class="sig-prename descclassname"><span class="pre">insentif.views.</span></code><code class="sig-name descname"><span class="pre">cancelApprovalKoran</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">id</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/insentif/views.html#cancelApprovalKoran"><span class="viewcode-link"><span class="pre">[sumber]</span></span></a><a class="headerlink" href="#insentif.views.cancelApprovalKoran" title="Link permanen untuk definisi ini">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="insentif.views.cancelApprovalSeminar">
+<code class="sig-prename descclassname"><span class="pre">insentif.views.</span></code><code class="sig-name descname"><span class="pre">cancelApprovalSeminar</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">id</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/insentif/views.html#cancelApprovalSeminar"><span class="viewcode-link"><span class="pre">[sumber]</span></span></a><a class="headerlink" href="#insentif.views.cancelApprovalSeminar" title="Link permanen untuk definisi ini">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="insentif.views.cancelApprovalTBI">
+<code class="sig-prename descclassname"><span class="pre">insentif.views.</span></code><code class="sig-name descname"><span class="pre">cancelApprovalTBI</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">id</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/insentif/views.html#cancelApprovalTBI"><span class="viewcode-link"><span class="pre">[sumber]</span></span></a><a class="headerlink" href="#insentif.views.cancelApprovalTBI" title="Link permanen untuk definisi ini">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="insentif.views.home">
+<code class="sig-prename descclassname"><span class="pre">insentif.views.</span></code><code class="sig-name descname"><span class="pre">home</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/insentif/views.html#home"><span class="viewcode-link"><span class="pre">[sumber]</span></span></a><a class="headerlink" href="#insentif.views.home" title="Link permanen untuk definisi ini">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="insentif.views.in_approval_group">
+<code class="sig-prename descclassname"><span class="pre">insentif.views.</span></code><code class="sig-name descname"><span class="pre">in_approval_group</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">user</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/insentif/views.html#in_approval_group"><span class="viewcode-link"><span class="pre">[sumber]</span></span></a><a class="headerlink" href="#insentif.views.in_approval_group" title="Link permanen untuk definisi ini">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="insentif.views.in_approval_plus_ljm_group">
+<code class="sig-prename descclassname"><span class="pre">insentif.views.</span></code><code class="sig-name descname"><span class="pre">in_approval_plus_ljm_group</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">user</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/insentif/views.html#in_approval_plus_ljm_group"><span class="viewcode-link"><span class="pre">[sumber]</span></span></a><a class="headerlink" href="#insentif.views.in_approval_plus_ljm_group" title="Link permanen untuk definisi ini">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="insentif.views.in_approval_plus_lppm_group">
+<code class="sig-prename descclassname"><span class="pre">insentif.views.</span></code><code class="sig-name descname"><span class="pre">in_approval_plus_lppm_group</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">user</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/insentif/views.html#in_approval_plus_lppm_group"><span class="viewcode-link"><span class="pre">[sumber]</span></span></a><a class="headerlink" href="#insentif.views.in_approval_plus_lppm_group" title="Link permanen untuk definisi ini">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="insentif.views.in_approval_plus_lppm_ljm_group">
+<code class="sig-prename descclassname"><span class="pre">insentif.views.</span></code><code class="sig-name descname"><span class="pre">in_approval_plus_lppm_ljm_group</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">user</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/insentif/views.html#in_approval_plus_lppm_ljm_group"><span class="viewcode-link"><span class="pre">[sumber]</span></span></a><a class="headerlink" href="#insentif.views.in_approval_plus_lppm_ljm_group" title="Link permanen untuk definisi ini">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="insentif.views.in_dekan_group">
+<code class="sig-prename descclassname"><span class="pre">insentif.views.</span></code><code class="sig-name descname"><span class="pre">in_dekan_group</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">user</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/insentif/views.html#in_dekan_group"><span class="viewcode-link"><span class="pre">[sumber]</span></span></a><a class="headerlink" href="#insentif.views.in_dekan_group" title="Link permanen untuk definisi ini">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="insentif.views.in_kaprodi_group">
+<code class="sig-prename descclassname"><span class="pre">insentif.views.</span></code><code class="sig-name descname"><span class="pre">in_kaprodi_group</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">user</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/insentif/views.html#in_kaprodi_group"><span class="viewcode-link"><span class="pre">[sumber]</span></span></a><a class="headerlink" href="#insentif.views.in_kaprodi_group" title="Link permanen untuk definisi ini">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="insentif.views.in_keuangan_group">
+<code class="sig-prename descclassname"><span class="pre">insentif.views.</span></code><code class="sig-name descname"><span class="pre">in_keuangan_group</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">user</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/insentif/views.html#in_keuangan_group"><span class="viewcode-link"><span class="pre">[sumber]</span></span></a><a class="headerlink" href="#insentif.views.in_keuangan_group" title="Link permanen untuk definisi ini">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="insentif.views.in_ljm_group">
+<code class="sig-prename descclassname"><span class="pre">insentif.views.</span></code><code class="sig-name descname"><span class="pre">in_ljm_group</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">user</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/insentif/views.html#in_ljm_group"><span class="viewcode-link"><span class="pre">[sumber]</span></span></a><a class="headerlink" href="#insentif.views.in_ljm_group" title="Link permanen untuk definisi ini">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="insentif.views.in_lppi_group">
+<code class="sig-prename descclassname"><span class="pre">insentif.views.</span></code><code class="sig-name descname"><span class="pre">in_lppi_group</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">user</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/insentif/views.html#in_lppi_group"><span class="viewcode-link"><span class="pre">[sumber]</span></span></a><a class="headerlink" href="#insentif.views.in_lppi_group" title="Link permanen untuk definisi ini">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="insentif.views.in_lppm_group">
+<code class="sig-prename descclassname"><span class="pre">insentif.views.</span></code><code class="sig-name descname"><span class="pre">in_lppm_group</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">user</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/insentif/views.html#in_lppm_group"><span class="viewcode-link"><span class="pre">[sumber]</span></span></a><a class="headerlink" href="#insentif.views.in_lppm_group" title="Link permanen untuk definisi ini">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="insentif.views.in_pimpinan_universitas_group">
+<code class="sig-prename descclassname"><span class="pre">insentif.views.</span></code><code class="sig-name descname"><span class="pre">in_pimpinan_universitas_group</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">user</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/insentif/views.html#in_pimpinan_universitas_group"><span class="viewcode-link"><span class="pre">[sumber]</span></span></a><a class="headerlink" href="#insentif.views.in_pimpinan_universitas_group" title="Link permanen untuk definisi ini">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="insentif.views.in_wr1_group">
+<code class="sig-prename descclassname"><span class="pre">insentif.views.</span></code><code class="sig-name descname"><span class="pre">in_wr1_group</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">user</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/insentif/views.html#in_wr1_group"><span class="viewcode-link"><span class="pre">[sumber]</span></span></a><a class="headerlink" href="#insentif.views.in_wr1_group" title="Link permanen untuk definisi ini">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="insentif.views.in_wr2_group">
+<code class="sig-prename descclassname"><span class="pre">insentif.views.</span></code><code class="sig-name descname"><span class="pre">in_wr2_group</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">user</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/insentif/views.html#in_wr2_group"><span class="viewcode-link"><span class="pre">[sumber]</span></span></a><a class="headerlink" href="#insentif.views.in_wr2_group" title="Link permanen untuk definisi ini">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="insentif.views.is_active">
+<code class="sig-prename descclassname"><span class="pre">insentif.views.</span></code><code class="sig-name descname"><span class="pre">is_active</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">user</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/insentif/views.html#is_active"><span class="viewcode-link"><span class="pre">[sumber]</span></span></a><a class="headerlink" href="#insentif.views.is_active" title="Link permanen untuk definisi ini">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="insentif.views.kirim_email_dosen">
+<code class="sig-prename descclassname"><span class="pre">insentif.views.</span></code><code class="sig-name descname"><span class="pre">kirim_email_dosen</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">user</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/insentif/views.html#kirim_email_dosen"><span class="viewcode-link"><span class="pre">[sumber]</span></span></a><a class="headerlink" href="#insentif.views.kirim_email_dosen" title="Link permanen untuk definisi ini">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="insentif.views.kirim_email_kaprodi">
+<code class="sig-prename descclassname"><span class="pre">insentif.views.</span></code><code class="sig-name descname"><span class="pre">kirim_email_kaprodi</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">user</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/insentif/views.html#kirim_email_kaprodi"><span class="viewcode-link"><span class="pre">[sumber]</span></span></a><a class="headerlink" href="#insentif.views.kirim_email_kaprodi" title="Link permanen untuk definisi ini">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="insentif.views.kirim_email_keuangan">
+<code class="sig-prename descclassname"><span class="pre">insentif.views.</span></code><code class="sig-name descname"><span class="pre">kirim_email_keuangan</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">user</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/insentif/views.html#kirim_email_keuangan"><span class="viewcode-link"><span class="pre">[sumber]</span></span></a><a class="headerlink" href="#insentif.views.kirim_email_keuangan" title="Link permanen untuk definisi ini">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="insentif.views.kirim_email_lppi">
+<code class="sig-prename descclassname"><span class="pre">insentif.views.</span></code><code class="sig-name descname"><span class="pre">kirim_email_lppi</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">user</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/insentif/views.html#kirim_email_lppi"><span class="viewcode-link"><span class="pre">[sumber]</span></span></a><a class="headerlink" href="#insentif.views.kirim_email_lppi" title="Link permanen untuk definisi ini">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="insentif.views.kirim_email_wr1">
+<code class="sig-prename descclassname"><span class="pre">insentif.views.</span></code><code class="sig-name descname"><span class="pre">kirim_email_wr1</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">user</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/insentif/views.html#kirim_email_wr1"><span class="viewcode-link"><span class="pre">[sumber]</span></span></a><a class="headerlink" href="#insentif.views.kirim_email_wr1" title="Link permanen untuk definisi ini">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="insentif.views.koran">
+<code class="sig-prename descclassname"><span class="pre">insentif.views.</span></code><code class="sig-name descname"><span class="pre">koran</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/insentif/views.html#koran"><span class="viewcode-link"><span class="pre">[sumber]</span></span></a><a class="headerlink" href="#insentif.views.koran" title="Link permanen untuk definisi ini">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="insentif.views.koran_edit">
+<code class="sig-prename descclassname"><span class="pre">insentif.views.</span></code><code class="sig-name descname"><span class="pre">koran_edit</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">id</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/insentif/views.html#koran_edit"><span class="viewcode-link"><span class="pre">[sumber]</span></span></a><a class="headerlink" href="#insentif.views.koran_edit" title="Link permanen untuk definisi ini">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="insentif.views.koran_hapus">
+<code class="sig-prename descclassname"><span class="pre">insentif.views.</span></code><code class="sig-name descname"><span class="pre">koran_hapus</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">id</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/insentif/views.html#koran_hapus"><span class="viewcode-link"><span class="pre">[sumber]</span></span></a><a class="headerlink" href="#insentif.views.koran_hapus" title="Link permanen untuk definisi ini">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="insentif.views.listApprovalBookChapter">
+<code class="sig-prename descclassname"><span class="pre">insentif.views.</span></code><code class="sig-name descname"><span class="pre">listApprovalBookChapter</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/insentif/views.html#listApprovalBookChapter"><span class="viewcode-link"><span class="pre">[sumber]</span></span></a><a class="headerlink" href="#insentif.views.listApprovalBookChapter" title="Link permanen untuk definisi ini">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="insentif.views.listApprovalBuku">
+<code class="sig-prename descclassname"><span class="pre">insentif.views.</span></code><code class="sig-name descname"><span class="pre">listApprovalBuku</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/insentif/views.html#listApprovalBuku"><span class="viewcode-link"><span class="pre">[sumber]</span></span></a><a class="headerlink" href="#insentif.views.listApprovalBuku" title="Link permanen untuk definisi ini">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="insentif.views.listApprovalKoran">
+<code class="sig-prename descclassname"><span class="pre">insentif.views.</span></code><code class="sig-name descname"><span class="pre">listApprovalKoran</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/insentif/views.html#listApprovalKoran"><span class="viewcode-link"><span class="pre">[sumber]</span></span></a><a class="headerlink" href="#insentif.views.listApprovalKoran" title="Link permanen untuk definisi ini">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="insentif.views.listApprovalSeminar">
+<code class="sig-prename descclassname"><span class="pre">insentif.views.</span></code><code class="sig-name descname"><span class="pre">listApprovalSeminar</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/insentif/views.html#listApprovalSeminar"><span class="viewcode-link"><span class="pre">[sumber]</span></span></a><a class="headerlink" href="#insentif.views.listApprovalSeminar" title="Link permanen untuk definisi ini">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="insentif.views.listApprovalTBI">
+<code class="sig-prename descclassname"><span class="pre">insentif.views.</span></code><code class="sig-name descname"><span class="pre">listApprovalTBI</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/insentif/views.html#listApprovalTBI"><span class="viewcode-link"><span class="pre">[sumber]</span></span></a><a class="headerlink" href="#insentif.views.listApprovalTBI" title="Link permanen untuk definisi ini">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="insentif.views.rekap">
+<code class="sig-prename descclassname"><span class="pre">insentif.views.</span></code><code class="sig-name descname"><span class="pre">rekap</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kode</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/insentif/views.html#rekap"><span class="viewcode-link"><span class="pre">[sumber]</span></span></a><a class="headerlink" href="#insentif.views.rekap" title="Link permanen untuk definisi ini">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="insentif.views.seminar">
+<code class="sig-prename descclassname"><span class="pre">insentif.views.</span></code><code class="sig-name descname"><span class="pre">seminar</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/insentif/views.html#seminar"><span class="viewcode-link"><span class="pre">[sumber]</span></span></a><a class="headerlink" href="#insentif.views.seminar" title="Link permanen untuk definisi ini">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="insentif.views.seminar_edit">
+<code class="sig-prename descclassname"><span class="pre">insentif.views.</span></code><code class="sig-name descname"><span class="pre">seminar_edit</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">id</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/insentif/views.html#seminar_edit"><span class="viewcode-link"><span class="pre">[sumber]</span></span></a><a class="headerlink" href="#insentif.views.seminar_edit" title="Link permanen untuk definisi ini">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="insentif.views.seminar_hapus">
+<code class="sig-prename descclassname"><span class="pre">insentif.views.</span></code><code class="sig-name descname"><span class="pre">seminar_hapus</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">id</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/insentif/views.html#seminar_hapus"><span class="viewcode-link"><span class="pre">[sumber]</span></span></a><a class="headerlink" href="#insentif.views.seminar_hapus" title="Link permanen untuk definisi ini">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="insentif.views.tbi">
+<code class="sig-prename descclassname"><span class="pre">insentif.views.</span></code><code class="sig-name descname"><span class="pre">tbi</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/insentif/views.html#tbi"><span class="viewcode-link"><span class="pre">[sumber]</span></span></a><a class="headerlink" href="#insentif.views.tbi" title="Link permanen untuk definisi ini">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="insentif.views.tbi_edit">
+<code class="sig-prename descclassname"><span class="pre">insentif.views.</span></code><code class="sig-name descname"><span class="pre">tbi_edit</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">id</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/insentif/views.html#tbi_edit"><span class="viewcode-link"><span class="pre">[sumber]</span></span></a><a class="headerlink" href="#insentif.views.tbi_edit" title="Link permanen untuk definisi ini">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="insentif.views.tbi_hapus">
+<code class="sig-prename descclassname"><span class="pre">insentif.views.</span></code><code class="sig-name descname"><span class="pre">tbi_hapus</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">id</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/insentif/views.html#tbi_hapus"><span class="viewcode-link"><span class="pre">[sumber]</span></span></a><a class="headerlink" href="#insentif.views.tbi_hapus" title="Link permanen untuk definisi ini">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="insentif.views.updateJumlahTugasApproval">
+<code class="sig-prename descclassname"><span class="pre">insentif.views.</span></code><code class="sig-name descname"><span class="pre">updateJumlahTugasApproval</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/insentif/views.html#updateJumlahTugasApproval"><span class="viewcode-link"><span class="pre">[sumber]</span></span></a><a class="headerlink" href="#insentif.views.updateJumlahTugasApproval" title="Link permanen untuk definisi ini">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="e-user-guide">
+<h2>E. User Guide<a class="headerlink" href="#e-user-guide" title="Link permanen untuk headline ini">¶</a></h2>
+<p><a class="reference download internal" download="" href="../../_downloads/7660f94fac1457209e33df178b514a93/user-guide-insentif.pptx"><code class="xref download docutils literal notranslate"><span class="pre">Panduan</span> <span class="pre">Insentif</span> <span class="pre">dapat</span> <span class="pre">didownload</span> <span class="pre">disini</span></code></a></p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="../profil/index.html" class="btn btn-neutral float-right" title="3. PROFIL" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../pid/index.html" class="btn btn-neutral float-left" title="1. PID" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Hak cipta 2021, BTI UMS.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

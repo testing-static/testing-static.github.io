@@ -1,0 +1,252 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="id" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>surat.helper &mdash; Dokumentasi MyUMS 2019</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Indeks" href="../../genindex.html" />
+    <link rel="search" title="Pencarian" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> MyUMS
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/pid/index.html">1. PID</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/insentif/index.html">2. INSENTIF</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/profil/index.html">3. PROFIL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/monitoring/index.html">4. MONITORING</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/sipas/index.html">5. SIPAS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/about.html">Tentang MyUMS</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">MyUMS</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../index.html">Kode modul</a> &raquo;</li>
+        
+      <li>surat.helper</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Kode sumber untuk surat.helper</h1><div class="highlight"><pre>
+<span></span><span class="kn">import</span> <span class="nn">datetime</span>
+<span class="kn">import</span> <span class="nn">hashlib</span>
+
+<span class="kn">import</span> <span class="nn">requests</span>
+<span class="kn">from</span> <span class="nn">django.conf</span> <span class="kn">import</span> <span class="n">settings</span>
+
+
+<div class="viewcode-block" id="generate_token_by_user"><a class="viewcode-back" href="../../modules/sipas/index.html#surat.helper.generate_token_by_user">[docs]</a><span class="k">def</span> <span class="nf">generate_token_by_user</span><span class="p">():</span>
+    <span class="c1"># token_request = requests.post()</span>
+    <span class="c1"># token = &quot;91e75f6e568e2d195c16544e175d34f265c6f144&quot;</span>
+    <span class="c1"># token = &quot;d5a7a710c90a4e99c1a1e233cd3b729398dbaf57&quot;</span>
+    <span class="n">token</span> <span class="o">=</span> <span class="s2">&quot;d5a7a710c90a4e99c1a1e233cd3b729398dbaf571&quot;</span>
+    <span class="k">return</span> <span class="n">token</span></div>
+
+
+<div class="viewcode-block" id="get_tendik"><a class="viewcode-back" href="../../modules/sipas/index.html#surat.helper.get_tendik">[docs]</a><span class="k">def</span> <span class="nf">get_tendik</span><span class="p">():</span>
+    <span class="n">tgl</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">()</span><span class="o">.</span><span class="n">toordinal</span><span class="p">())</span>
+    <span class="n">seed</span> <span class="o">=</span> <span class="n">hashlib</span><span class="o">.</span><span class="n">sha256</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="s1">&#39;alfarabi&#39;</span> <span class="o">+</span> <span class="n">tgl</span><span class="p">)</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf-8&#39;</span><span class="p">))</span><span class="o">.</span><span class="n">hexdigest</span><span class="p">()</span>
+    <span class="n">url</span> <span class="o">=</span> <span class="s1">&#39;https://sihrd.ums.ac.id/umar/v1/uniid/tendik?user=aan493&amp;hash=&#39;</span> <span class="o">+</span> <span class="n">seed</span>
+    <span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">verify</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+    <span class="n">tendik</span> <span class="o">=</span> <span class="n">r</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+    <span class="n">list_tendik</span> <span class="o">=</span> <span class="nb">list</span><span class="p">()</span>
+    <span class="k">for</span> <span class="n">data</span> <span class="ow">in</span> <span class="n">tendik</span><span class="p">[</span><span class="s1">&#39;rows&#39;</span><span class="p">]:</span>
+        <span class="n">list_tendik</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;UniID&#39;</span><span class="p">],</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;Nama lengkap&#39;</span><span class="p">]))</span>
+    <span class="k">return</span> <span class="n">list_tendik</span></div>
+
+
+<div class="viewcode-block" id="get_dosen"><a class="viewcode-back" href="../../modules/sipas/index.html#surat.helper.get_dosen">[docs]</a><span class="k">def</span> <span class="nf">get_dosen</span><span class="p">():</span>
+    <span class="n">tgl</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">()</span><span class="o">.</span><span class="n">toordinal</span><span class="p">())</span>
+    <span class="n">seed</span> <span class="o">=</span> <span class="n">hashlib</span><span class="o">.</span><span class="n">sha256</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="s1">&#39;alfarabi&#39;</span> <span class="o">+</span> <span class="n">tgl</span><span class="p">)</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf-8&#39;</span><span class="p">))</span><span class="o">.</span><span class="n">hexdigest</span><span class="p">()</span>
+    <span class="n">url</span> <span class="o">=</span> <span class="s1">&#39;https://sihrd.ums.ac.id/umar/v1/uniid/dosen?user=aan493&amp;hash=&#39;</span> <span class="o">+</span> <span class="n">seed</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+    <span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">verify</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+    <span class="n">dosen</span> <span class="o">=</span> <span class="n">r</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+    <span class="n">list_dosen</span> <span class="o">=</span> <span class="nb">list</span><span class="p">()</span>
+    <span class="k">for</span> <span class="n">data</span> <span class="ow">in</span> <span class="n">dosen</span><span class="p">[</span><span class="s1">&#39;rows&#39;</span><span class="p">]:</span>
+        <span class="n">list_dosen</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;UniID&#39;</span><span class="p">],</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;Nama lengkap&#39;</span><span class="p">]))</span>
+    <span class="k">return</span> <span class="n">list_dosen</span></div>
+
+
+<div class="viewcode-block" id="get_jabatan"><a class="viewcode-back" href="../../modules/sipas/index.html#surat.helper.get_jabatan">[docs]</a><span class="k">def</span> <span class="nf">get_jabatan</span><span class="p">():</span>
+    <span class="n">url_ws</span> <span class="o">=</span> <span class="n">settings</span><span class="o">.</span><span class="n">SIHRD_URL</span> <span class="o">+</span> <span class="s2">&quot;umar/v2/jabatan&quot;</span>
+    <span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url_ws</span><span class="p">,</span> <span class="n">auth</span><span class="o">=</span><span class="p">(</span><span class="n">settings</span><span class="o">.</span><span class="n">SIHRD_WS_UNAME</span><span class="p">,</span> <span class="n">settings</span><span class="o">.</span><span class="n">SIHRD_WS_PWD</span><span class="p">))</span>
+    <span class="n">list_jabatan</span> <span class="o">=</span> <span class="nb">list</span><span class="p">()</span>
+    <span class="k">for</span> <span class="n">data</span> <span class="ow">in</span> <span class="n">r</span><span class="o">.</span><span class="n">json</span><span class="p">()[</span><span class="s1">&#39;rows&#39;</span><span class="p">]:</span>
+        <span class="k">if</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;penjabat&#39;</span><span class="p">]:</span>
+            <span class="n">list_jabatan</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;kode_jabatan&#39;</span><span class="p">],</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;nama&#39;</span><span class="p">]</span><span class="o">+</span><span class="s1">&#39; &#39;</span><span class="o">+</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;unit&#39;</span><span class="p">]))</span>
+    <span class="k">return</span> <span class="n">list_jabatan</span></div>
+</pre></div>
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Hak cipta 2021, BTI UMS.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

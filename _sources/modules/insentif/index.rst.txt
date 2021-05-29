@@ -1,0 +1,558 @@
+***********
+2. INSENTIF
+***********
+
+A. Context Diagram
+##################
+.. image:: images/context-diagram.png
+   :width: 600      
+
+B. Class Diagram
+################
+.. image:: images/class-diagram.png
+   :width: 600      
+
+C. Use Case
+###########
+
+C.1. Gambar Use Case Diagram
+****************************
+.. image:: images/use-case.png
+   :width: 600      
+
+C.2. Tabel Use Case
+*******************
+.. csv-table::
+   :file: csv/use-case.csv    
+   :header-rows: 1
+
+C.3. Detail Use Case Diagram
+****************************
+
+01. UC-001
+=============
+.. csv-table::
+   :file: csv/uc-001/uc-insentif-1.csv          
+
+.. csv-table::
+   :file: csv/uc-001/uc-insentif-2.csv          
+
+.. csv-table::
+   :file: csv/uc-001/uc-insentif-3.csv          
+
+.. csv-table::
+   :file: csv/uc-001/uc-insentif-4.csv          
+
+.. csv-table::
+   :file: csv/uc-001/uc-insentif-5.csv          
+   
+.. csv-table::
+   :file: csv/uc-001/uc-insentif-6.csv          
+
+.. csv-table::
+   :file: csv/uc-001/uc-insentif-7.csv          
+
+.. csv-table::
+   :file: csv/uc-001/uc-insentif-8.csv          
+
+.. csv-table::
+   :file: csv/uc-001/uc-insentif-9.csv          
+            
+
+02. UC-002
+=============
+.. csv-table::
+   :file: csv/uc-002/uc-insentif-1.csv          
+
+.. csv-table::
+   :file: csv/uc-002/uc-insentif-2.csv          
+
+.. csv-table::
+   :file: csv/uc-002/uc-insentif-3.csv          
+
+.. csv-table::
+   :file: csv/uc-002/uc-insentif-4.csv          
+
+.. csv-table::
+   :file: csv/uc-002/uc-insentif-5.csv          
+   
+.. csv-table::
+   :file: csv/uc-002/uc-insentif-6.csv          
+
+.. csv-table::
+   :file: csv/uc-002/uc-insentif-7.csv          
+
+.. csv-table::
+   :file: csv/uc-002/uc-insentif-8.csv          
+
+.. csv-table::
+   :file: csv/uc-002/uc-insentif-9.csv          
+            
+
+03. UC-003
+=============
+.. csv-table::
+   :file: csv/uc-003/uc-insentif-1.csv          
+
+.. csv-table::
+   :file: csv/uc-003/uc-insentif-2.csv          
+
+.. csv-table::
+   :file: csv/uc-003/uc-insentif-3.csv          
+
+.. csv-table::
+   :file: csv/uc-003/uc-insentif-4.csv          
+
+.. csv-table::
+   :file: csv/uc-003/uc-insentif-5.csv          
+   
+.. csv-table::
+   :file: csv/uc-003/uc-insentif-6.csv          
+
+.. csv-table::
+   :file: csv/uc-003/uc-insentif-7.csv          
+
+.. csv-table::
+   :file: csv/uc-003/uc-insentif-8.csv          
+
+.. csv-table::
+   :file: csv/uc-003/uc-insentif-9.csv          
+            
+
+04. UC-004
+=============
+.. csv-table::
+   :file: csv/uc-004/uc-insentif-1.csv          
+
+.. csv-table::
+   :file: csv/uc-004/uc-insentif-2.csv          
+
+.. csv-table::
+   :file: csv/uc-004/uc-insentif-3.csv          
+
+.. csv-table::
+   :file: csv/uc-004/uc-insentif-4.csv          
+
+.. csv-table::
+   :file: csv/uc-004/uc-insentif-5.csv          
+   
+.. csv-table::
+   :file: csv/uc-004/uc-insentif-6.csv          
+
+.. csv-table::
+   :file: csv/uc-004/uc-insentif-7.csv          
+
+.. csv-table::
+   :file: csv/uc-004/uc-insentif-8.csv          
+
+.. csv-table::
+   :file: csv/uc-004/uc-insentif-9.csv          
+            
+
+05. UC-005
+=============
+.. csv-table::
+   :file: csv/uc-005/uc-insentif-1.csv          
+
+.. csv-table::
+   :file: csv/uc-005/uc-insentif-2.csv          
+
+.. csv-table::
+   :file: csv/uc-005/uc-insentif-3.csv          
+
+.. csv-table::
+   :file: csv/uc-005/uc-insentif-4.csv          
+
+.. csv-table::
+   :file: csv/uc-005/uc-insentif-5.csv          
+   
+.. csv-table::
+   :file: csv/uc-005/uc-insentif-6.csv          
+
+.. csv-table::
+   :file: csv/uc-005/uc-insentif-7.csv          
+
+.. csv-table::
+   :file: csv/uc-005/uc-insentif-8.csv          
+
+.. csv-table::
+   :file: csv/uc-005/uc-insentif-9.csv          
+            
+
+06. UC-006
+=============
+.. csv-table::
+   :file: csv/uc-006/uc-insentif-1.csv          
+
+.. csv-table::
+   :file: csv/uc-006/uc-insentif-2.csv          
+
+.. csv-table::
+   :file: csv/uc-006/uc-insentif-3.csv          
+
+.. csv-table::
+   :file: csv/uc-006/uc-insentif-4.csv          
+
+.. csv-table::
+   :file: csv/uc-006/uc-insentif-5.csv          
+   
+.. csv-table::
+   :file: csv/uc-006/uc-insentif-6.csv          
+
+.. csv-table::
+   :file: csv/uc-006/uc-insentif-7.csv          
+
+.. csv-table::
+   :file: csv/uc-006/uc-insentif-8.csv          
+
+.. csv-table::
+   :file: csv/uc-006/uc-insentif-9.csv          
+            
+
+07. UC-007
+=============
+.. csv-table::
+   :file: csv/uc-007/uc-insentif-1.csv          
+
+.. csv-table::
+   :file: csv/uc-007/uc-insentif-2.csv          
+
+.. csv-table::
+   :file: csv/uc-007/uc-insentif-3.csv          
+
+.. csv-table::
+   :file: csv/uc-007/uc-insentif-4.csv          
+
+.. csv-table::
+   :file: csv/uc-007/uc-insentif-5.csv          
+   
+.. csv-table::
+   :file: csv/uc-007/uc-insentif-6.csv          
+
+.. csv-table::
+   :file: csv/uc-007/uc-insentif-7.csv          
+
+.. csv-table::
+   :file: csv/uc-007/uc-insentif-8.csv          
+
+.. csv-table::
+   :file: csv/uc-007/uc-insentif-9.csv          
+            
+
+08. UC-008
+=============
+.. csv-table::
+   :file: csv/uc-008/uc-insentif-1.csv          
+
+.. csv-table::
+   :file: csv/uc-008/uc-insentif-2.csv          
+
+.. csv-table::
+   :file: csv/uc-008/uc-insentif-3.csv          
+
+.. csv-table::
+   :file: csv/uc-008/uc-insentif-4.csv          
+
+.. csv-table::
+   :file: csv/uc-008/uc-insentif-5.csv          
+   
+.. csv-table::
+   :file: csv/uc-008/uc-insentif-6.csv          
+
+.. csv-table::
+   :file: csv/uc-008/uc-insentif-7.csv          
+
+.. csv-table::
+   :file: csv/uc-008/uc-insentif-8.csv          
+
+.. csv-table::
+   :file: csv/uc-008/uc-insentif-9.csv          
+            
+
+09. UC-009
+=============
+.. csv-table::
+   :file: csv/uc-009/uc-insentif-1.csv          
+
+.. csv-table::
+   :file: csv/uc-009/uc-insentif-2.csv          
+
+.. csv-table::
+   :file: csv/uc-009/uc-insentif-3.csv          
+
+.. csv-table::
+   :file: csv/uc-009/uc-insentif-4.csv          
+
+.. csv-table::
+   :file: csv/uc-009/uc-insentif-5.csv          
+   
+.. csv-table::
+   :file: csv/uc-009/uc-insentif-6.csv          
+
+.. csv-table::
+   :file: csv/uc-009/uc-insentif-7.csv          
+
+.. csv-table::
+   :file: csv/uc-009/uc-insentif-8.csv          
+
+.. csv-table::
+   :file: csv/uc-009/uc-insentif-9.csv          
+            
+
+10. UC-010
+=============
+.. csv-table::
+   :file: csv/uc-010/uc-insentif-1.csv          
+
+.. csv-table::
+   :file: csv/uc-010/uc-insentif-2.csv          
+
+.. csv-table::
+   :file: csv/uc-010/uc-insentif-3.csv          
+
+.. csv-table::
+   :file: csv/uc-010/uc-insentif-4.csv          
+
+.. csv-table::
+   :file: csv/uc-010/uc-insentif-5.csv          
+   
+.. csv-table::
+   :file: csv/uc-010/uc-insentif-6.csv          
+
+.. csv-table::
+   :file: csv/uc-010/uc-insentif-7.csv          
+
+.. csv-table::
+   :file: csv/uc-010/uc-insentif-8.csv          
+
+.. csv-table::
+   :file: csv/uc-010/uc-insentif-9.csv          
+            
+
+11. UC-011
+=============
+.. csv-table::
+   :file: csv/uc-011/uc-insentif-1.csv          
+
+.. csv-table::
+   :file: csv/uc-011/uc-insentif-2.csv          
+
+.. csv-table::
+   :file: csv/uc-011/uc-insentif-3.csv          
+
+.. csv-table::
+   :file: csv/uc-011/uc-insentif-4.csv          
+
+.. csv-table::
+   :file: csv/uc-011/uc-insentif-5.csv          
+   
+.. csv-table::
+   :file: csv/uc-011/uc-insentif-6.csv          
+
+.. csv-table::
+   :file: csv/uc-011/uc-insentif-7.csv          
+
+.. csv-table::
+   :file: csv/uc-011/uc-insentif-8.csv          
+
+.. csv-table::
+   :file: csv/uc-011/uc-insentif-9.csv          
+            
+
+12. UC-012
+=============
+.. csv-table::
+   :file: csv/uc-012/uc-insentif-1.csv          
+
+.. csv-table::
+   :file: csv/uc-012/uc-insentif-2.csv          
+
+.. csv-table::
+   :file: csv/uc-012/uc-insentif-3.csv          
+
+.. csv-table::
+   :file: csv/uc-012/uc-insentif-4.csv          
+
+.. csv-table::
+   :file: csv/uc-012/uc-insentif-5.csv          
+   
+.. csv-table::
+   :file: csv/uc-012/uc-insentif-6.csv          
+
+.. csv-table::
+   :file: csv/uc-012/uc-insentif-7.csv          
+
+.. csv-table::
+   :file: csv/uc-012/uc-insentif-8.csv          
+
+.. csv-table::
+   :file: csv/uc-012/uc-insentif-9.csv          
+            
+
+13. UC-013
+=============
+.. csv-table::
+   :file: csv/uc-013/uc-insentif-1.csv          
+
+.. csv-table::
+   :file: csv/uc-013/uc-insentif-2.csv          
+
+.. csv-table::
+   :file: csv/uc-013/uc-insentif-3.csv          
+
+.. csv-table::
+   :file: csv/uc-013/uc-insentif-4.csv          
+
+.. csv-table::
+   :file: csv/uc-013/uc-insentif-5.csv          
+   
+.. csv-table::
+   :file: csv/uc-013/uc-insentif-6.csv          
+
+.. csv-table::
+   :file: csv/uc-013/uc-insentif-7.csv          
+
+.. csv-table::
+   :file: csv/uc-013/uc-insentif-8.csv          
+
+.. csv-table::
+   :file: csv/uc-013/uc-insentif-9.csv          
+            
+
+14. UC-014
+=============
+.. csv-table::
+   :file: csv/uc-014/uc-insentif-1.csv          
+
+.. csv-table::
+   :file: csv/uc-014/uc-insentif-2.csv          
+
+.. csv-table::
+   :file: csv/uc-014/uc-insentif-3.csv          
+
+.. csv-table::
+   :file: csv/uc-014/uc-insentif-4.csv          
+
+.. csv-table::
+   :file: csv/uc-014/uc-insentif-5.csv          
+   
+.. csv-table::
+   :file: csv/uc-014/uc-insentif-6.csv          
+
+.. csv-table::
+   :file: csv/uc-014/uc-insentif-7.csv          
+
+.. csv-table::
+   :file: csv/uc-014/uc-insentif-8.csv          
+
+.. csv-table::
+   :file: csv/uc-014/uc-insentif-9.csv          
+            
+
+15. UC-015
+=============
+.. csv-table::
+   :file: csv/uc-015/uc-insentif-1.csv          
+
+.. csv-table::
+   :file: csv/uc-015/uc-insentif-2.csv          
+
+.. csv-table::
+   :file: csv/uc-015/uc-insentif-3.csv          
+
+.. csv-table::
+   :file: csv/uc-015/uc-insentif-4.csv          
+
+.. csv-table::
+   :file: csv/uc-015/uc-insentif-5.csv          
+   
+.. csv-table::
+   :file: csv/uc-015/uc-insentif-6.csv          
+
+.. csv-table::
+   :file: csv/uc-015/uc-insentif-7.csv          
+
+.. csv-table::
+   :file: csv/uc-015/uc-insentif-8.csv          
+
+.. csv-table::
+   :file: csv/uc-015/uc-insentif-9.csv          
+            
+
+16. UC-016
+=============
+.. csv-table::
+   :file: csv/uc-016/uc-insentif-1.csv          
+
+.. csv-table::
+   :file: csv/uc-016/uc-insentif-2.csv          
+
+.. csv-table::
+   :file: csv/uc-016/uc-insentif-3.csv          
+
+.. csv-table::
+   :file: csv/uc-016/uc-insentif-4.csv          
+
+.. csv-table::
+   :file: csv/uc-016/uc-insentif-5.csv          
+   
+.. csv-table::
+   :file: csv/uc-016/uc-insentif-6.csv          
+
+.. csv-table::
+   :file: csv/uc-016/uc-insentif-7.csv          
+
+.. csv-table::
+   :file: csv/uc-016/uc-insentif-8.csv          
+
+.. csv-table::
+   :file: csv/uc-016/uc-insentif-9.csv          
+            
+
+17. UC-017
+=============
+.. csv-table::
+   :file: csv/uc-017/uc-insentif-1.csv          
+
+.. csv-table::
+   :file: csv/uc-017/uc-insentif-2.csv          
+
+.. csv-table::
+   :file: csv/uc-017/uc-insentif-3.csv          
+
+.. csv-table::
+   :file: csv/uc-017/uc-insentif-4.csv          
+
+.. csv-table::
+   :file: csv/uc-017/uc-insentif-5.csv          
+   
+.. csv-table::
+   :file: csv/uc-017/uc-insentif-6.csv          
+
+.. csv-table::
+   :file: csv/uc-017/uc-insentif-7.csv          
+
+.. csv-table::
+   :file: csv/uc-017/uc-insentif-8.csv          
+
+.. csv-table::
+   :file: csv/uc-017/uc-insentif-9.csv 
+
+
+.. D. Alamat-Alamat URL
+.. ####################
+.. .. automodule:: surat.urls
+..    :members:
+..    :undoc-members:
+
+
+D. Halaman Views
+################
+.. automodule:: insentif.views
+   :members:
+   :undoc-members:
+
+
+E. User Guide
+#############
+:download:`Panduan Insentif dapat didownload disini <files/user-guide-insentif.pptx>`

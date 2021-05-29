@@ -1,0 +1,3401 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="id" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>3. PROFIL &mdash; Dokumentasi MyUMS 2019</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Indeks" href="../../genindex.html" />
+    <link rel="search" title="Pencarian" href="../../search.html" />
+    <link rel="next" title="4. MONITORING" href="../monitoring/index.html" />
+    <link rel="prev" title="2. INSENTIF" href="../insentif/index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> MyUMS
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../pid/index.html">1. PID</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../insentif/index.html">2. INSENTIF</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">3. PROFIL</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#a-context-diagram">A. Context Diagram</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#b-class-diagram">B. Class Diagram</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#c-use-case">C. Use Case</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#c-1-gambar-use-case-diagram">C.1. Gambar Use Case Diagram</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#c-2-tabel-use-case">C.2. Tabel Use Case</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#c-3-detail-use-case-diagram">C.3. Detail Use Case Diagram</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#uc-01">1. UC-01</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#uc-02">2. UC-02</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#uc-03">3. UC-03</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#uc-04">4. UC-04</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#uc-05">5. UC-05</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#uc-06">6. UC-06</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#uc-07">7. UC-07</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#uc-08">8. UC-08</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#uc-09">9. UC-09</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#uc-010">10. UC-010</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#uc-011">11. UC-011</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#uc-012">12. UC-012</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#uc-013">13. UC-013</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#uc-014">14. UC-014</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#uc-015">15. UC-015</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#uc-016">16. UC-016</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#uc-017">17. UC-017</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#d-halaman-views">D. Halaman Views</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#e-user-guide">E. User Guide</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../monitoring/index.html">4. MONITORING</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sipas/index.html">5. SIPAS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about.html">Tentang MyUMS</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">MyUMS</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>3. PROFIL</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../../_sources/modules/profil/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="profil">
+<h1>3. PROFIL<a class="headerlink" href="#profil" title="Link permanen untuk headline ini">¶</a></h1>
+<div class="section" id="a-context-diagram">
+<h2>A. Context Diagram<a class="headerlink" href="#a-context-diagram" title="Link permanen untuk headline ini">¶</a></h2>
+<a class="reference internal image-reference" href="../../_images/context-diagram2.png"><img alt="../../_images/context-diagram2.png" src="../../_images/context-diagram2.png" style="width: 700px;" /></a>
+</div>
+<div class="section" id="b-class-diagram">
+<h2>B. Class Diagram<a class="headerlink" href="#b-class-diagram" title="Link permanen untuk headline ini">¶</a></h2>
+<a class="reference internal image-reference" href="../../_images/class-diagram.PNG"><img alt="../../_images/class-diagram.PNG" src="../../_images/class-diagram.PNG" style="width: 600px;" /></a>
+</div>
+<div class="section" id="c-use-case">
+<h2>C. Use Case<a class="headerlink" href="#c-use-case" title="Link permanen untuk headline ini">¶</a></h2>
+<div class="section" id="c-1-gambar-use-case-diagram">
+<h3>C.1. Gambar Use Case Diagram<a class="headerlink" href="#c-1-gambar-use-case-diagram" title="Link permanen untuk headline ini">¶</a></h3>
+<a class="reference internal image-reference" href="../../_images/use-case-diagram1.png"><img alt="../../_images/use-case-diagram1.png" src="../../_images/use-case-diagram1.png" style="width: 900px;" /></a>
+</div>
+<div class="section" id="c-2-tabel-use-case">
+<h3>C.2. Tabel Use Case<a class="headerlink" href="#c-2-tabel-use-case" title="Link permanen untuk headline ini">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>No</p></th>
+<th class="head"><p>Kode Use Case</p></th>
+<th class="head"><p>Nama Use Case</p></th>
+<th class="head"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>UC-001</p></td>
+<td><p>Melakukan Login</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>UC-002</p></td>
+<td><p>Melihat Profil Singkat</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>UC-003</p></td>
+<td><p>Mengubah Profil</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>UC-004</p></td>
+<td><p>Melihat Slip Gaji</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>5</p></td>
+<td><p>UC-005</p></td>
+<td><p>Mencetak Slip Gaji</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>6</p></td>
+<td><p>UC-006</p></td>
+<td><p>Melihat Slip Potongan</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>7</p></td>
+<td><p>UC-007</p></td>
+<td><p>Melihat publikasi</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>8</p></td>
+<td><p>UC-008</p></td>
+<td><p>Menambah data publikasi</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>9</p></td>
+<td><p>UC-009</p></td>
+<td><p>Mengubah data publikasi</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>10</p></td>
+<td><p>UC-010</p></td>
+<td><p>Menghapus Data Publikasi</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>11</p></td>
+<td><p>UC-011</p></td>
+<td><p>Melihat Litabmas</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>12</p></td>
+<td><p>UC-012</p></td>
+<td><p>Menambah Data Litabmas</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>13</p></td>
+<td><p>UC-013</p></td>
+<td><p>Mengubah Data Litabmas</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>14</p></td>
+<td><p>UC-014</p></td>
+<td><p>Menghapus Data Litabmas</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>15</p></td>
+<td><p>UC-015</p></td>
+<td><p>Melihat Profil Lengkap</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>16</p></td>
+<td><p>UC-016</p></td>
+<td><p>Memfilter Slip Gaji</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>17</p></td>
+<td><p>UC-017</p></td>
+<td><p>Memfilter Slip Potongan</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="c-3-detail-use-case-diagram">
+<h3>C.3. Detail Use Case Diagram<a class="headerlink" href="#c-3-detail-use-case-diagram" title="Link permanen untuk headline ini">¶</a></h3>
+<div class="section" id="uc-01">
+<h4>1. UC-01<a class="headerlink" href="#uc-01" title="Link permanen untuk headline ini">¶</a></h4>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Use Case Identification and History</p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Use Case ID:</p></td>
+<td><p>UC-001</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Use Case Name:</p></td>
+<td><p>Melakukan Login</p></td>
+<td><p>Version No:</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p>End Objective:</p></td>
+<td><p>User berhasil Login</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Created By:</p></td>
+<td><p>BTI</p></td>
+<td><p>On (date):</p></td>
+<td><p>23 Mei 2021</p></td>
+</tr>
+<tr class="row-even"><td><p>Last Updated By:</p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>User/Actor:</p></td>
+<td><p>Dosen/Karyawan</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Business Owner:</p></td>
+<td><p>UMS</p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Preconditions</p></td>
+</tr>
+<tr class="row-even"><td><p>Sistem menampilkan form login.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Basic Flow</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Step</p></td>
+<td><p>User Actions</p></td>
+<td><p>System Actions</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>User login  dengan menggunakan CAS menginputkan username dan password.</p></td>
+<td><p>Sistem mengautentifikasi yang sudah diinputkan oleh user.</p></td>
+</tr>
+<tr class="row-even"><td><p>2</p></td>
+<td><p>User mengklik button login.</p></td>
+<td><p>Sistem menampilkan menu sesuai dengan akses level.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Alternate Flow</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Step</p></td>
+<td><p>User Actions</p></td>
+<td><p>System Actions</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Exception Flow</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Step</p></td>
+<td><p>User Actions</p></td>
+<td><p>System Actions</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>Username dan password tidak valid.</p></td>
+<td><p>Sistem memberikan peringatan berupa pop-up bahwa username dan password tidak sesuai.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Post conditions</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Sistem memberikan konfirmasi keberhasilan login dengan sebuah message box</p></td>
+<td><p>kemudian menampilkan form  utama yang berisi tombol untuk menuju ke form lain sesuai hak akses.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Special Requirements</p></td>
+</tr>
+<tr class="row-even"><td><p>Kosong</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Business Rules</p></td>
+</tr>
+<tr class="row-even"><td><p>Untuk login hanya bisa diakses oleh user pada unit yang ada di UMS saja.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Other Notes (Assumptions</p></td>
+<td><p>Issues</p></td>
+<td><p>)</p></td>
+</tr>
+<tr class="row-even"><td><p>Kosong</p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="uc-02">
+<h4>2. UC-02<a class="headerlink" href="#uc-02" title="Link permanen untuk headline ini">¶</a></h4>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Use Case Identification and History</p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Use Case ID:</p></td>
+<td><p>UC-002</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Use Case Name:</p></td>
+<td><p>Melihat Profil Singkat</p></td>
+<td><p>Version No:</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p>End Objective:</p></td>
+<td><p>Mengetahui profil singkat</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Created By:</p></td>
+<td><p>BTI</p></td>
+<td><p>On (date):</p></td>
+<td><p>23 Mei 2021</p></td>
+</tr>
+<tr class="row-even"><td><p>Last Updated By:</p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>User/Actor:</p></td>
+<td><p>Dosen/Karyawan</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Business Owner:</p></td>
+<td><p>UMS</p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Preconditions</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Basic Flow</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Step</p></td>
+<td><p>User Actions</p></td>
+<td><p>System Actions</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>User memilih menu Profil Singkat.</p></td>
+<td><p>Sistem menampilkan deskripsi profil singkat user</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Alternate Flow</p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Step</p></td>
+<td><p>User Actions</p></td>
+<td><p>System Actions</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Exception Flow</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Step</p></td>
+<td><p>User Actions</p></td>
+<td><p>System Actions</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Post conditions</p></td>
+</tr>
+<tr class="row-even"><td><p>Sistem menampilkan informasi terkait profil user secara singkat.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Special Requirements</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Business Rules</p></td>
+</tr>
+<tr class="row-even"><td><p>User hanya bisa melihat deskripsi singkatnya saja.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Other Notes (Assumptions</p></td>
+<td><p>Issues</p></td>
+<td><p>)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="uc-03">
+<h4>3. UC-03<a class="headerlink" href="#uc-03" title="Link permanen untuk headline ini">¶</a></h4>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Use Case Identification and History</p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Use Case ID:</p></td>
+<td><p>UC-003</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Use Case Name:</p></td>
+<td><p>Melengkapi Profil</p></td>
+<td><p>Version No:</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p>End Objective:</p></td>
+<td><p>User berhasil melengkapi profil</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Created By:</p></td>
+<td><p>BTI</p></td>
+<td><p>On (date):</p></td>
+<td><p>23 Mei 2021</p></td>
+</tr>
+<tr class="row-even"><td><p>Last Updated By:</p></td>
+<td><p>BTI</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>User/Actor:</p></td>
+<td><p>Dosen.</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Business Owner:</p></td>
+<td><p>UMS</p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Preconditions</p></td>
+</tr>
+<tr class="row-even"><td><p>User dalam keadaan login.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Basic Flow</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Step</p></td>
+<td><p>User Actions</p></td>
+<td><p>System Actions</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>User memilih menu Data Pribadi.</p></td>
+<td><p>Sistem menampilkan form deskripsi diri.</p></td>
+</tr>
+<tr class="row-even"><td><p>2</p></td>
+<td><p>User mengisi form.</p></td>
+<td><p>Sistem merekam data yang diinput.</p></td>
+</tr>
+<tr class="row-odd"><td><p>3</p></td>
+<td><p>User mengeklik simpan.</p></td>
+<td><p>Sistem menyimpan data yang nantinya ditampilkan di profil.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Alternate Flow</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Step</p></td>
+<td><p>User Actions</p></td>
+<td><p>System Actions</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Exception Flow</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Step</p></td>
+<td><p>User Actions</p></td>
+<td><p>System Actions</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Post conditions</p></td>
+</tr>
+<tr class="row-even"><td><p>User berhasil melengkapi profil</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Special Requirements</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Business Rules</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Other Notes (Assumptions</p></td>
+<td><p>Issues</p></td>
+<td><p>)</p></td>
+</tr>
+<tr class="row-even"><td><p>form boleh tidak diisi semua</p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="uc-04">
+<h4>4. UC-04<a class="headerlink" href="#uc-04" title="Link permanen untuk headline ini">¶</a></h4>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Use Case Identification and History</p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Use Case ID:</p></td>
+<td><p>UC-004</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Use Case Name:</p></td>
+<td><p>Melihat Slip Gaji</p></td>
+<td><p>Version No:</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p>End Objective:</p></td>
+<td><p>Mengetahui slip gaji</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Created By:</p></td>
+<td><p>BTI</p></td>
+<td><p>On (date):</p></td>
+<td><p>23 Mei 2021</p></td>
+</tr>
+<tr class="row-even"><td><p>Last Updated By:</p></td>
+<td><p>BTI</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>User/Actor:</p></td>
+<td><p>Dosen/Karyawan.</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Business Owner:</p></td>
+<td><p>UMS</p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Preconditions</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Basic Flow</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Step</p></td>
+<td><p>User Actions</p></td>
+<td><p>System Actions</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>User memilih menu Slip Gaji.</p></td>
+<td><p>Sistem menampilkan slip gaji.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Alternate Flow</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Step</p></td>
+<td><p>User Actions</p></td>
+<td><p>System Actions</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Exception Flow</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Step</p></td>
+<td><p>User Actions</p></td>
+<td><p>System Actions</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Post conditions</p></td>
+</tr>
+<tr class="row-even"><td><p>Sistem menampilkan informasi terkait slip gaji.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Special Requirements</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Business Rules</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Other Notes (Assumptions</p></td>
+<td><p>Issues</p></td>
+<td><p>)</p></td>
+</tr>
+<tr class="row-even"><td><p>Kosong</p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="uc-05">
+<h4>5. UC-05<a class="headerlink" href="#uc-05" title="Link permanen untuk headline ini">¶</a></h4>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Use Case Identification and History</p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Use Case ID:</p></td>
+<td><p>UC-005</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Use Case Name:</p></td>
+<td><p>Mencetak slip gaji</p></td>
+<td><p>Version No:</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p>End Objective:</p></td>
+<td><p>Berhasil mencetak slip gaji</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Created By:</p></td>
+<td><p>BTI</p></td>
+<td><p>On (date):</p></td>
+<td><p>23 Mei 2021</p></td>
+</tr>
+<tr class="row-even"><td><p>Last Updated By:</p></td>
+<td><p>BTI</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>User/Actor:</p></td>
+<td><p>Dosen/Karyawan</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Business Owner:</p></td>
+<td><p>UMS</p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Preconditions</p></td>
+</tr>
+<tr class="row-even"><td><p>harus sudah masuk menu Slip Gaji</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Basic Flow</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Step</p></td>
+<td><p>User Actions</p></td>
+<td><p>System Actions</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>User memilih menu Slip Gaji.</p></td>
+<td><p>Sistem menampilkan informasi slip gaji dan button cetak.</p></td>
+</tr>
+<tr class="row-even"><td><p>2</p></td>
+<td><p>User mengeklik button cetak.</p></td>
+<td><p>Sistem mencetak slip gaji dalam bentuk pdf maupun diarahkan print.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Alternate Flow</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Step</p></td>
+<td><p>User Actions</p></td>
+<td><p>System Actions</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Exception Flow</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Step</p></td>
+<td><p>User Actions</p></td>
+<td><p>System Actions</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Post conditions</p></td>
+</tr>
+<tr class="row-even"><td><p>Sistem mencetak slip gaji dalam bentuk pdf maupun diarahkan ke printer.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Special Requirements</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Business Rules</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Other Notes (Assumptions</p></td>
+<td><p>Issues</p></td>
+<td><p>)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="uc-06">
+<h4>6. UC-06<a class="headerlink" href="#uc-06" title="Link permanen untuk headline ini">¶</a></h4>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Use Case Identification and History</p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Use Case ID:</p></td>
+<td><p>UC-006</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Use Case Name:</p></td>
+<td><p>Melihat Slip Potongan</p></td>
+<td><p>Version No:</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p>End Objective:</p></td>
+<td><p>Mengetahui data slip potongan</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Created By:</p></td>
+<td><p>BTI</p></td>
+<td><p>On (date):</p></td>
+<td><p>23 Mei 2021</p></td>
+</tr>
+<tr class="row-even"><td><p>Last Updated By:</p></td>
+<td><p>BTI</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>User/Actor:</p></td>
+<td><p>Dosen/Karyawan.</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Business Owner:</p></td>
+<td><p>UMS</p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Preconditions</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Basic Flow</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Step</p></td>
+<td><p>User Actions</p></td>
+<td><p>System Actions</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>User memilih menu Slip Potongan.</p></td>
+<td><p>Sistem menampilkan data slip potongan</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Alternate Flow</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Step</p></td>
+<td><p>User Actions</p></td>
+<td><p>System Actions</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Exception Flow</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Step</p></td>
+<td><p>User Actions</p></td>
+<td><p>System Actions</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Post conditions</p></td>
+</tr>
+<tr class="row-even"><td><p>Sistem menampilkan informasi terkait slip potongan.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Special Requirements</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Business Rules</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Other Notes (Assumptions</p></td>
+<td><p>Issues</p></td>
+<td><p>)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="uc-07">
+<h4>7. UC-07<a class="headerlink" href="#uc-07" title="Link permanen untuk headline ini">¶</a></h4>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Use Case Identification and History</p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Use Case ID:</p></td>
+<td><p>UC-007</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Use Case Name:</p></td>
+<td><p>Melihat Publikasi</p></td>
+<td><p>Version No:</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p>End Objective:</p></td>
+<td><p>Mengetahui data publikasi</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Created By:</p></td>
+<td><p>BTI</p></td>
+<td><p>On (date):</p></td>
+<td><p>23 Mei 2021</p></td>
+</tr>
+<tr class="row-even"><td><p>Last Updated By:</p></td>
+<td><p>BTI</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>User/Actor:</p></td>
+<td><p>Dosen/Karyawan.</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Business Owner:</p></td>
+<td><p>UMS</p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Preconditions</p></td>
+</tr>
+<tr class="row-even"><td><p>User dalam keadaan login.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Basic Flow</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Step</p></td>
+<td><p>User Actions</p></td>
+<td><p>System Actions</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>User memilih menu Publikasi.</p></td>
+<td><p>Sistem menampilkan daftar publikasi</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Alternate Flow</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Step</p></td>
+<td><p>User Actions</p></td>
+<td><p>System Actions</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Exception Flow</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Step</p></td>
+<td><p>User Actions</p></td>
+<td><p>System Actions</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Post conditions</p></td>
+</tr>
+<tr class="row-even"><td><p>Sistem menampilkan publikasi yang sudah pernah ditambahkan oleh user.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Business Rules</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Other Notes (Assumptions</p></td>
+<td><p>Issues</p></td>
+<td><p>)</p></td>
+</tr>
+<tr class="row-even"><td><p>publikasi tergolong menjadi: artikel</p></td>
+<td><p>prosiding</p></td>
+<td><p>buku dan book chapter.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="uc-08">
+<h4>8. UC-08<a class="headerlink" href="#uc-08" title="Link permanen untuk headline ini">¶</a></h4>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Use Case Identification and History</p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Use Case ID:</p></td>
+<td><p>UC-008</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Use Case Name:</p></td>
+<td><p>Menambah Publikasi</p></td>
+<td><p>Version No:</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p>End Objective:</p></td>
+<td><p>User berhasil menambahkan data publikasi</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Created By:</p></td>
+<td><p>BTI</p></td>
+<td><p>On (date):</p></td>
+<td><p>24 Mei 2021</p></td>
+</tr>
+<tr class="row-even"><td><p>Last Updated By:</p></td>
+<td><p>BTI</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>User/Actor:</p></td>
+<td><p>Dosen/Karyawan.</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Business Owner:</p></td>
+<td><p>UMS</p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Preconditions</p></td>
+</tr>
+<tr class="row-even"><td><p>User dalam keadaan login dan berada di dalam menu Publikasi.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Basic Flow</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Step</p></td>
+<td><p>User Actions</p></td>
+<td><p>System Actions</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>User mengeklik menu Data Diri.</p></td>
+<td><p>Sistem menampilkan daftar submenu dari Data Diri.</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>User memilih menu Publikasi.</p></td>
+<td><p>Sistem menampilkan halaman Publikasi dimana terdapat sub menu tambah artikel</p></td>
+<td><p>tambah prosiding</p></td>
+<td><p>tambah buku dan gtambah book chapter.</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>User mengeklik salah satu sub menu (misal:Tambah Artikel).</p></td>
+<td><p>Sistem menampilkan form dari Tambah Artikel.</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>User mengisi form.</p></td>
+<td><p>Sistem merekam inputan user.</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>User mengeklik button Simpan.</p></td>
+<td><p>Sistem menyimpan data tambahan publikasi dari user</p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Alternate Flow</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Step</p></td>
+<td><p>User Actions</p></td>
+<td><p>System Actions</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>User mengeklik button Kembali</p></td>
+<td><p>Sistem tidak merecord penambahan data dari user dan dibawa lagi ke halaman Publikasi.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Exception Flow</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Step</p></td>
+<td><p>User Actions</p></td>
+<td><p>System Actions</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Post conditions</p></td>
+</tr>
+<tr class="row-even"><td><p>User berhasil menambahkan data publikasinya ke dalam sistem.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Special Requirements</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Business Rules</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Other Notes (Assumptions</p></td>
+<td><p>Issues</p></td>
+<td><p>)</p></td>
+</tr>
+<tr class="row-even"><td><p>jika form tidak diisi lengkap</p></td>
+<td><p>sistem tetap bisa menyimpan data.</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="uc-09">
+<h4>9. UC-09<a class="headerlink" href="#uc-09" title="Link permanen untuk headline ini">¶</a></h4>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Use Case Identification and History</p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Use Case ID:</p></td>
+<td><p>UC-009</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Use Case Name:</p></td>
+<td><p>Mengubah Data Publikasi</p></td>
+<td><p>Version No:</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p>End Objective:</p></td>
+<td><p>User berhasil melakukan perubahan data publikasi</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Created By:</p></td>
+<td><p>BTI</p></td>
+<td><p>On (date):</p></td>
+<td><p>24 Mei 2021</p></td>
+</tr>
+<tr class="row-even"><td><p>Last Updated By:</p></td>
+<td><p>BTI</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>User/Actor:</p></td>
+<td><p>Dosen.</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Business Owner:</p></td>
+<td><p>UMS</p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Preconditions</p></td>
+</tr>
+<tr class="row-even"><td><p>User dalam keadaan login dan berada di dalam menu Publikasi.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Basic Flow</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Step</p></td>
+<td><p>User Actions</p></td>
+<td><p>System Actions</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>User mengeklik menu Data Diri.</p></td>
+<td><p>Sistem menampilkan daftar sub menu dari Data Diri.</p></td>
+</tr>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>User memilih sub menu Publikasi.</p></td>
+<td><p>Sistem menampilkan halaman publikasi yang berisi data-data yang sudah dipublikasikan pleh user.</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>User memilih data mana yang akan diubah atau edit (misal: Artikel). Kemudian mengeklik button edit.</p></td>
+<td><p>Sistem menampilkan form dari data yang sudah dipilih.</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>User mengubah isi form.</p></td>
+<td><p>Sistem merekam inputan user.</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>User mengeklik button Simpan.</p></td>
+<td><p>Sistem menyimpan data perubahan publikasi dari user.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Alternate Flow</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Step</p></td>
+<td><p>User Actions</p></td>
+<td><p>System Actions</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>User mengeklik button Kembali</p></td>
+<td><p>Sistem tidak merecord perubahan data dari user dan dibawa lagi ke halaman Publikasi.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Exception Flow</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Step</p></td>
+<td><p>User Actions</p></td>
+<td><p>System Actions</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Post conditions</p></td>
+</tr>
+<tr class="row-even"><td><p>User berhasil melakukan perubahan data publikasinya ke dalam sistem.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Special Requirements</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Business Rules</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Other Notes (Assumptions</p></td>
+<td><p>Issues</p></td>
+<td><p>)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="uc-010">
+<h4>10. UC-010<a class="headerlink" href="#uc-010" title="Link permanen untuk headline ini">¶</a></h4>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Use Case Identification and History</p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Use Case ID:</p></td>
+<td><p>UC-010</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Use Case Name:</p></td>
+<td><p>Mengubah Penulis Data Publikasi</p></td>
+<td><p>Version No:</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p>End Objective:</p></td>
+<td><p>User berhasil mengubah penulis publikasi</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Created By:</p></td>
+<td><p>BTI</p></td>
+<td><p>On (date):</p></td>
+<td><p>24 Mei 2021</p></td>
+</tr>
+<tr class="row-even"><td><p>Last Updated By:</p></td>
+<td><p>BTI</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>User/Actor:</p></td>
+<td><p>Dosen</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Business Owner:</p></td>
+<td><p>UMS</p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Preconditions</p></td>
+</tr>
+<tr class="row-even"><td><p>User dalam keadaan login dan berada di dalam menu Publikasi.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Basic Flow</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Step</p></td>
+<td><p>User Actions</p></td>
+<td><p>System Actions</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>User mengeklik menu Data Diri.</p></td>
+<td><p>Sistem menampilkan daftar submenu dari Data Diri.</p></td>
+</tr>
+<tr class="row-even"><td><p>2</p></td>
+<td><p>User memilih menu Publikasi.</p></td>
+<td><p>Sistem menampilkan halaman publikasi yang berisi data-data yang sudah dipublikasikan pleh user.</p></td>
+</tr>
+<tr class="row-odd"><td><p>3</p></td>
+<td><p>User memilih penulis mana yang akan diubah(misal: Artikel). Kemudian mengeklik button edit .</p></td>
+<td><p>Sistem menampilkan form edit</p></td>
+</tr>
+<tr class="row-even"><td><p>4</p></td>
+<td><p>user menyimpan.</p></td>
+<td><p>Sistem memperbarui penulis</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Alternate Flow</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Step</p></td>
+<td><p>User Actions</p></td>
+<td><p>System Actions</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Exception Flow</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Step</p></td>
+<td><p>User Actions</p></td>
+<td><p>System Actions</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Post conditions</p></td>
+</tr>
+<tr class="row-even"><td><p>User berhasil melakukan penrubahan penulis Publikasi.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Special Requirements</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Business Rules</p></td>
+</tr>
+<tr class="row-even"><td><p>Pengubahan data hanya bisa dilakukan satu per satu.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Other Notes (Assumptions</p></td>
+<td><p>Issues</p></td>
+<td><p>)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="uc-011">
+<h4>11. UC-011<a class="headerlink" href="#uc-011" title="Link permanen untuk headline ini">¶</a></h4>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Use Case Identification and History</p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Use Case ID:</p></td>
+<td><p>UC-011</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Use Case Name:</p></td>
+<td><p>Melihat Litabmas</p></td>
+<td><p>Version No:</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p>End Objective:</p></td>
+<td><p>Mengetahui data Litabmas</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Created By:</p></td>
+<td><p>BTI</p></td>
+<td><p>On (date):</p></td>
+<td><p>23 Mei 2021</p></td>
+</tr>
+<tr class="row-even"><td><p>Last Updated By:</p></td>
+<td><p>BTI</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>User/Actor:</p></td>
+<td><p>Dosen.</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Business Owner:</p></td>
+<td><p>UMS</p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Preconditions</p></td>
+</tr>
+<tr class="row-even"><td><p>User dalam keadaan login.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Basic Flow</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Step</p></td>
+<td><p>User Actions</p></td>
+<td><p>System Actions</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>User memilih menu Data Pribadi. Sistem menampilkan sub menu dari Data Pribadi.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>2</p></td>
+<td><p>User mengeklik sub menu Litabmas.</p></td>
+<td><p>Sistem menampilkan halaman litabmas yang berisi data litabmas milik user.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Alternate Flow</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Step</p></td>
+<td><p>User Actions</p></td>
+<td><p>System Actions</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Exception Flow</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Step</p></td>
+<td><p>User Actions</p></td>
+<td><p>System Actions</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Post conditions</p></td>
+</tr>
+<tr class="row-even"><td><p>Sistem menampilkan data litabmas yang sudah pernah ditambahkan oleh user.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Business Rules</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Other Notes (Assumptions</p></td>
+<td><p>Issues</p></td>
+<td><p>)</p></td>
+</tr>
+<tr class="row-even"><td><p>litabmas tergolong menjadi: Penelitian dan Pengabdian</p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="uc-012">
+<h4>12. UC-012<a class="headerlink" href="#uc-012" title="Link permanen untuk headline ini">¶</a></h4>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Use Case Identification and History</p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Use Case ID:</p></td>
+<td><p>UC-012</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Use Case Name:</p></td>
+<td><p>Menambah Litabmas</p></td>
+<td><p>Version No:</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p>End Objective:</p></td>
+<td><p>User berhasil menambahkan data Litabmas</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Created By:</p></td>
+<td><p>BTI</p></td>
+<td><p>On (date):</p></td>
+<td><p>24 Mei 2021</p></td>
+</tr>
+<tr class="row-even"><td><p>Last Updated By:</p></td>
+<td><p>BTI</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>User/Actor:</p></td>
+<td><p>Dosen.</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Business Owner:</p></td>
+<td><p>UMS</p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Preconditions</p></td>
+</tr>
+<tr class="row-even"><td><p>User dalam keadaan login dan berada di dalam sub menu Litabmas.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Basic Flow</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Step</p></td>
+<td><p>User Actions</p></td>
+<td><p>System Actions</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>User memilih menu Litabmas.</p></td>
+<td><p>Sistem menampilkan halaman Litabmas dimana terdapat sub menu Tambah Penelitian dan Tambah Pengabdian.</p></td>
+</tr>
+<tr class="row-even"><td><p>2</p></td>
+<td><p>User mengeklik salah satu sub menu (misal:Tambah Penelitian).</p></td>
+<td><p>Sistem menampilkan form dari Tambah Penelitian.</p></td>
+</tr>
+<tr class="row-odd"><td><p>3</p></td>
+<td><p>User mengisi form.</p></td>
+<td><p>Sistem merekam inputan user.</p></td>
+</tr>
+<tr class="row-even"><td><p>4</p></td>
+<td><p>User mengeklik button Simpan.</p></td>
+<td><p>Sistem menyimpan data tambahan litabmas dari user</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Alternate Flow</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Step</p></td>
+<td><p>User Actions</p></td>
+<td><p>System Actions</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>User mengeklik button Kembali</p></td>
+<td><p>Sistem tidak merecord penambahan data dari user dan dibawa lagi ke halaman Litabmas.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Exception Flow</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Step</p></td>
+<td><p>User Actions</p></td>
+<td><p>System Actions</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Post conditions</p></td>
+</tr>
+<tr class="row-even"><td><p>User berhasil menambahkan data litabmasnya ke dalam sistem.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Special Requirements</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Business Rules</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Other Notes (Assumptions</p></td>
+<td><p>Issues</p></td>
+<td><p>)</p></td>
+</tr>
+<tr class="row-even"><td><p>jika form tidak diisi lengkap</p></td>
+<td><p>sistem tetap bisa menyimpan data.</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="uc-013">
+<h4>13. UC-013<a class="headerlink" href="#uc-013" title="Link permanen untuk headline ini">¶</a></h4>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Use Case Identification and History</p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Use Case ID:</p></td>
+<td><p>UC-013</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Use Case Name:</p></td>
+<td><p>Mengubah Data Litabmas</p></td>
+<td><p>Version No:</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p>End Objective:</p></td>
+<td><p>User berhasil melakukan perubahan data litabmas</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Created By:</p></td>
+<td><p>BTI</p></td>
+<td><p>On (date):</p></td>
+<td><p>24 Mei 2021</p></td>
+</tr>
+<tr class="row-even"><td><p>Last Updated By:</p></td>
+<td><p>BTI</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>User/Actor:</p></td>
+<td><p>Dosen.</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Business Owner:</p></td>
+<td><p>UMS</p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Preconditions</p></td>
+</tr>
+<tr class="row-even"><td><p>User dalam keadaan login dan berada di dalam sub menu Litabmas.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Basic Flow</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Step</p></td>
+<td><p>User Actions</p></td>
+<td><p>System Actions</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>User memilih menu Data Pribadi.</p></td>
+<td><p>Sistem menambilkan daftar sub menu dari data pribadi.</p></td>
+</tr>
+<tr class="row-even"><td><p>2</p></td>
+<td><p>User mengeklik sub menu Litabmas.</p></td>
+<td><p>Sistem menampilkan halaman litabmas yang berisi data-data yang sudah ditambahkan oleh user.</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>User memilih data mana yang akan diubah atau edit (misal: Penelitian). Kemudian mengeklik button edit.</p></td>
+<td><p>Sistem menampilkan form dari data yang sudah dipilih.</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>User mengubah isi form.</p></td>
+<td><p>Sistem merekam inputan user.</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>User mengeklik button Simpan.</p></td>
+<td><p>Sistem menyimpan perubahan data litabmas dari user.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Alternate Flow</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Step</p></td>
+<td><p>User Actions</p></td>
+<td><p>System Actions</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>User mengeklik button Kembali</p></td>
+<td><p>Sistem tidak merecord perubahan data dari user dan dibawa lagi ke halaman Litabmas.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Exception Flow</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Step</p></td>
+<td><p>User Actions</p></td>
+<td><p>System Actions</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Post conditions</p></td>
+</tr>
+<tr class="row-even"><td><p>User berhasil melakukan perubahan data litabmasnya ke dalam sistem.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Special Requirements</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Business Rules</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Other Notes (Assumptions</p></td>
+<td><p>Issues</p></td>
+<td><p>)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="uc-014">
+<h4>14. UC-014<a class="headerlink" href="#uc-014" title="Link permanen untuk headline ini">¶</a></h4>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Use Case Identification and History</p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Use Case ID:</p></td>
+<td><p>UC-014</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Use Case Name:</p></td>
+<td><p>Mengubah Penulis Litabmas</p></td>
+<td><p>Version No:</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p>End Objective:</p></td>
+<td><p>User berhasil mengubah penulis data penulis Litabmas</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Created By:</p></td>
+<td><p>BTI</p></td>
+<td><p>On (date):</p></td>
+<td><p>24 Mei 2021</p></td>
+</tr>
+<tr class="row-even"><td><p>Last Updated By:</p></td>
+<td><p>BTI</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>User/Actor:</p></td>
+<td><p>Dosen.</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Business Owner:</p></td>
+<td><p>UMS</p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Preconditions</p></td>
+</tr>
+<tr class="row-even"><td><p>User dalam keadaan login dan berada di dalam submenu Litabmas.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Basic Flow</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Step</p></td>
+<td><p>User Actions</p></td>
+<td><p>System Actions</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>User memilih menu Data Pribadi.</p></td>
+<td><p>Sistem menambilkan daftar sub menu dari data pribadi.</p></td>
+</tr>
+<tr class="row-even"><td><p>2</p></td>
+<td><p>User mengeklik sub menu Litabmas.</p></td>
+<td><p>Sistem menampilkan halaman litabmas yang berisi data-data yang sudah ditambahkan oleh user.</p></td>
+</tr>
+<tr class="row-odd"><td><p>3</p></td>
+<td><p>User memilih penulis mana yang akan diubah(misal: Penelitian). Kemudian mengeklik button edit.</p></td>
+<td><p>Sistem menampilkan form.</p></td>
+</tr>
+<tr class="row-even"><td><p>4</p></td>
+<td><p>User menyimpan.</p></td>
+<td><p>Sistem memperbarui penulis data yang dipilih user dan membawa user ke halaman Litabmas.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Alternate Flow</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Step</p></td>
+<td><p>User Actions</p></td>
+<td><p>System Actions</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Exception Flow</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Step</p></td>
+<td><p>User Actions</p></td>
+<td><p>System Actions</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Post conditions</p></td>
+</tr>
+<tr class="row-even"><td><p>User berhasil melakukan pengubahan data penulis Litabmas.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Special Requirements</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Business Rules</p></td>
+</tr>
+<tr class="row-even"><td><p>Pengubahan data hanya bisa dilakukan satu per satu.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Other Notes (Assumptions</p></td>
+<td><p>Issues</p></td>
+<td><p>)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="uc-015">
+<h4>15. UC-015<a class="headerlink" href="#uc-015" title="Link permanen untuk headline ini">¶</a></h4>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Use Case Identification and History</p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Use Case ID:</p></td>
+<td><p>UC-015</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Use Case Name:</p></td>
+<td><p>Melihat Profil Lengkap</p></td>
+<td><p>Version No:</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p>End Objective:</p></td>
+<td><p>Mengetahui profil lengkap</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Created By:</p></td>
+<td><p>BTI</p></td>
+<td><p>On (date):</p></td>
+<td><p>23 Mei 2021</p></td>
+</tr>
+<tr class="row-even"><td><p>Last Updated By:</p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>User/Actor:</p></td>
+<td><p>Dosen/Karyawan</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Business Owner:</p></td>
+<td><p>UMS</p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Preconditions</p></td>
+</tr>
+<tr class="row-even"><td><p>harus berada di menu deskripsi diri</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Basic Flow</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Step</p></td>
+<td><p>User Actions</p></td>
+<td><p>System Actions</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>User memilih menu deskripsi diri.</p></td>
+<td><p>Sistem menampilkan halaman deskripsi diri</p></td>
+</tr>
+<tr class="row-even"><td><p>2</p></td>
+<td><p>User memilih lihat profil</p></td>
+<td><p>Sistem menampilkan halaman profil lengkap</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Alternate Flow</p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Step</p></td>
+<td><p>User Actions</p></td>
+<td><p>System Actions</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Exception Flow</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Step</p></td>
+<td><p>User Actions</p></td>
+<td><p>System Actions</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Post conditions</p></td>
+</tr>
+<tr class="row-even"><td><p>Sistem menampilkan informasi terkait profil user secara lengkap.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Special Requirements</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Business Rules</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Other Notes (Assumptions</p></td>
+<td><p>Issues</p></td>
+<td><p>)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="uc-016">
+<h4>16. UC-016<a class="headerlink" href="#uc-016" title="Link permanen untuk headline ini">¶</a></h4>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Use Case Identification and History</p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Use Case ID:</p></td>
+<td><p>UC-016</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Use Case Name:</p></td>
+<td><p>Memfilter Slip Gaji</p></td>
+<td><p>Version No:</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p>End Objective:</p></td>
+<td><p>Berhasil memfilter slip gaji</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Created By:</p></td>
+<td><p>BTI</p></td>
+<td><p>On (date):</p></td>
+<td><p>23 Mei 2021</p></td>
+</tr>
+<tr class="row-even"><td><p>Last Updated By:</p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>User/Actor:</p></td>
+<td><p>Dosen/Karyawan.</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Business Owner:</p></td>
+<td><p>UMS</p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Preconditions</p></td>
+</tr>
+<tr class="row-even"><td><p>harus sudah masuk menu Slip Gaji</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Basic Flow</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Step</p></td>
+<td><p>User Actions</p></td>
+<td><p>System Actions</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>User memilih menu Slip Gaji.</p></td>
+<td><p>Sistem menampilkan halaman slip gaji</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>2</p></td>
+<td><p>User memilih filter Bulan yang disediakan.</p></td>
+<td><p>Sistem menampilkan halaman data Slip Gaji sesuai bulan yang dipilih user.</p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Alternate Flow</p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Step</p></td>
+<td><p>User Actions</p></td>
+<td><p>System Actions</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Exception Flow</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Step</p></td>
+<td><p>User Actions</p></td>
+<td><p>System Actions</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Post conditions</p></td>
+</tr>
+<tr class="row-even"><td><p>User berhasil memfilter bulan slip gaji sesuai request.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Special Requirements</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Business Rules</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Other Notes (Assumptions</p></td>
+<td><p>Issues</p></td>
+<td><p>)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="uc-017">
+<h4>17. UC-017<a class="headerlink" href="#uc-017" title="Link permanen untuk headline ini">¶</a></h4>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Use Case Identification and History</p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Use Case ID:</p></td>
+<td><p>UC-017</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Use Case Name:</p></td>
+<td><p>Memfilter Slip Potongan</p></td>
+<td><p>Version No:</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p>End Objective:</p></td>
+<td><p>Berhasil memfilter slip potongan</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Created By:</p></td>
+<td><p>BTI</p></td>
+<td><p>On (date):</p></td>
+<td><p>23 Mei 2021</p></td>
+</tr>
+<tr class="row-even"><td><p>Last Updated By:</p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>User/Actor:</p></td>
+<td><p>Dosen/Karyawan.</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Business Owner:</p></td>
+<td><p>UMS</p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Preconditions</p></td>
+</tr>
+<tr class="row-even"><td><p>harus sudah masuk menu Slip Potongan</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Basic Flow</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Step</p></td>
+<td><p>User Actions</p></td>
+<td><p>System Actions</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>User memilih menu Slip Potongan.</p></td>
+<td><p>Sistem menampilkan halaman slip potongan</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>2</p></td>
+<td><p>User memilih filter Bulan yang disediakan.</p></td>
+<td><p>Sistem menampilkan halaman data Slip Potongan sesuai bulan yang dipilih user.</p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Alternate Flow</p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Step</p></td>
+<td><p>User Actions</p></td>
+<td><p>System Actions</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Exception Flow</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Step</p></td>
+<td><p>User Actions</p></td>
+<td><p>System Actions</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Post conditions</p></td>
+</tr>
+<tr class="row-even"><td><p>User berhasil memfilter data rekap sarjana sesuai request.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Special Requirements</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Business Rules</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Other Notes (Assumptions</p></td>
+<td><p>Issues</p></td>
+<td><p>)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="section" id="d-halaman-views">
+<h2>D. Halaman Views<a class="headerlink" href="#d-halaman-views" title="Link permanen untuk headline ini">¶</a></h2>
+</div>
+<div class="section" id="e-user-guide">
+<h2>E. User Guide<a class="headerlink" href="#e-user-guide" title="Link permanen untuk headline ini">¶</a></h2>
+<p><a class="reference download internal" download="" href="../../_downloads/b1853e0f1bf15c4798a3cd32dcb3a2a2/user-guide-profil.pptx"><code class="xref download docutils literal notranslate"><span class="pre">panduan</span> <span class="pre">Profil</span> <span class="pre">dapat</span> <span class="pre">didownload</span> <span class="pre">di</span> <span class="pre">sini</span></code></a></p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="../monitoring/index.html" class="btn btn-neutral float-right" title="4. MONITORING" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../insentif/index.html" class="btn btn-neutral float-left" title="2. INSENTIF" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Hak cipta 2021, BTI UMS.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

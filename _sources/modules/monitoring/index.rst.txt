@@ -1,0 +1,703 @@
+*************
+4. MONITORING
+*************
+
+A. Context Diagram
+##################
+.. image:: images/context-diagram.png
+   :width: 700      
+
+B. Format API
+#############
+1. Rekap Sarjana
+****************
+.. code-block:: json
+
+   {
+      "id": 92,
+      "id_jurusan": "1",
+      "nama_jurusan": "Pendidikan Akuntansi",
+      "nama_fakultas": "FKIP",
+      "jml_pendaftar_1": "31",
+      "jml_pendaftar_2": "43",
+      "jml_diterima": "37",
+      "jml_pil_3": "2",
+      "jml_registrasi": "18",
+      "jml_transfer": "0",
+      "jml_undur_diri": "0",
+      "kuota": "240",
+      "passing_grade": 40,
+      "tahun_ods": "2021",
+      "last_update": "2021-05-27T12:59:57",
+      "prodi": 1
+   },
+
+2. Rekap Pascasarjana
+*********************
+.. code-block:: json
+   
+   { 
+      "jumlah_diterima_gel_1": 8,
+      "jumlah_adm": 19,
+      "gel1": 17,
+      "jumlah_diterima": 19,
+      "jumlah": 43,
+      "prodi": "Magister Hukum Ekonomi Syariah",
+      "jumlah_diterima_gel_2": 11,
+      "jumlah_adm_gel_1": 8,
+      "jumlah_registrasi_gel_1": 7,
+      "jumlah_adm_gel_2": 11,
+      "jumlah_registrasi_gel_2": 11,
+      "jumlah_registrasi": 18,
+      "gel2": 26
+   },
+
+3. Program Studi
+****************
+.. code-block:: json
+
+   {
+      "id": 1,
+      "prodi_id": "1",
+      "prodi_nama_jurusan": "Pendidikan Akuntansi",
+      "prodi_nama_fakultas": "FKIP",
+      "prodi_nim": "A210",
+      "prodi_group": "2",
+      "prodi_kuota": 240,
+      "prodi_passing_grade": 40,
+      "prodi_bank": "JATENG SYARIAH",
+      "prodi_uni_id": "prog119",
+      "prodi_1": "",
+      "prodi_2": "",
+      "is_aktif": true,
+      "tipe_jurusan": "0 ",
+      "prodi_nim_twinning": ""
+   },
+
+4. Laporan Registrasi 
+*********************
+.. code-block:: json
+
+   {
+      "HP": "085851602449",
+      "TGL_REG": "01/02/2021",
+      "NIM": "K100210097",
+      "ALAMAT": "RT 3 / RW 4 KEMBIRITAN, KABUPATEN BANYUWANGI JAWA TIMUR",
+      "NO_TES": "210013801",
+      "NAMA": "QUROTA AYUNA EGIA PUTRI",
+      "TMP_LAHIR": "BANYUWANGI",
+      "TGL_LAHIR": "26/06/2002",
+      "JNS_KELAMIN": "Perempuan",
+      "PRODI_ID": "19",
+      "NILAI": 99
+   },
+
+5. Publikasi/Libtamas
+*********************
+.. code-block:: json
+
+   {
+      "prodi": "Program Studi Farmasi",
+      "sumber_dana": "UMS",
+      "tahun": "2020/2021",
+      "id_penelitian": 881,
+      "judul": "Pengetahuan, Sikap Dan Perilaku Masyarakat Terhadap Covid 19 dan Faktor-Faktor yang Mempengaruhinya",
+      "fakultas": "Farmasi",
+      "jml_dana": "9000000",
+      "pengusul": "ty112"
+   },
+ 
+   
+C. Use Case
+########### 
+
+C.1. Gambar Use Case Diagram
+****************************
+.. image:: images/use-case-diagram.png
+   :width: 900      
+
+C.2. Tabel Use Case
+*******************
+.. csv-table::
+   :file: csv/use-case.csv    
+   :header-rows: 1
+
+C.3. Detail Use Case Diagram
+****************************
+1. UC-001
+=========
+.. csv-table::
+   :file: csv/use case-1/uc-monitoring-1.csv          
+
+.. csv-table::
+   :file: csv/use case-1/uc-monitoring-2.csv          
+
+.. csv-table::
+   :file: csv/use case-1/uc-monitoring-3.csv          
+
+.. csv-table::
+   :file: csv/use case-1/uc-monitoring-4.csv          
+
+.. csv-table::
+   :file: csv/use case-1/uc-monitoring-5.csv          
+   
+.. csv-table::
+   :file: csv/use case-1/uc-monitoring-6.csv          
+
+.. csv-table::
+   :file: csv/use case-1/uc-monitoring-7.csv          
+
+.. csv-table::
+   :file: csv/use case-1/uc-monitoring-8.csv          
+
+.. csv-table::
+   :file: csv/use case-1/uc-monitoring-9.csv          
+            
+
+2. UC-002
+=========
+.. csv-table::
+   :file: csv/use case-2/uc-monitoring-1.csv          
+
+.. csv-table::
+   :file: csv/use case-2/uc-monitoring-2.csv          
+
+.. csv-table::
+   :file: csv/use case-2/uc-monitoring-3.csv          
+
+.. csv-table::
+   :file: csv/use case-2/uc-monitoring-4.csv          
+
+.. csv-table::
+   :file: csv/use case-2/uc-monitoring-5.csv          
+   
+.. csv-table::
+   :file: csv/use case-2/uc-monitoring-6.csv          
+
+.. csv-table::
+   :file: csv/use case-2/uc-monitoring-7.csv          
+
+.. csv-table::
+   :file: csv/use case-2/uc-monitoring-8.csv          
+
+.. csv-table::
+   :file: csv/use case-2/uc-monitoring-9.csv          
+            
+
+3. UC-003
+=========
+.. csv-table::
+   :file: csv/use case-3/uc-monitoring-1.csv          
+
+.. csv-table::
+   :file: csv/use case-3/uc-monitoring-2.csv          
+
+.. csv-table::
+   :file: csv/use case-3/uc-monitoring-3.csv          
+
+.. csv-table::
+   :file: csv/use case-3/uc-monitoring-4.csv          
+
+.. csv-table::
+   :file: csv/use case-3/uc-monitoring-5.csv          
+   
+.. csv-table::
+   :file: csv/use case-3/uc-monitoring-6.csv          
+
+.. csv-table::
+   :file: csv/use case-3/uc-monitoring-7.csv          
+
+.. csv-table::
+   :file: csv/use case-3/uc-monitoring-8.csv          
+
+.. csv-table::
+   :file: csv/use case-3/uc-monitoring-9.csv          
+            
+
+4. UC-004
+=========
+.. csv-table::
+   :file: csv/use case-4/uc-monitoring-1.csv          
+
+.. csv-table::
+   :file: csv/use case-4/uc-monitoring-2.csv          
+
+.. csv-table::
+   :file: csv/use case-4/uc-monitoring-3.csv          
+
+.. csv-table::
+   :file: csv/use case-4/uc-monitoring-4.csv          
+
+.. csv-table::
+   :file: csv/use case-4/uc-monitoring-5.csv          
+   
+.. csv-table::
+   :file: csv/use case-4/uc-monitoring-6.csv          
+
+.. csv-table::
+   :file: csv/use case-4/uc-monitoring-7.csv          
+
+.. csv-table::
+   :file: csv/use case-4/uc-monitoring-8.csv          
+
+.. csv-table::
+   :file: csv/use case-4/uc-monitoring-9.csv          
+            
+
+5. UC-005
+=========
+.. csv-table::
+   :file: csv/use case-5/uc-monitoring-1.csv          
+
+.. csv-table::
+   :file: csv/use case-5/uc-monitoring-2.csv          
+
+.. csv-table::
+   :file: csv/use case-5/uc-monitoring-3.csv          
+
+.. csv-table::
+   :file: csv/use case-5/uc-monitoring-4.csv          
+
+.. csv-table::
+   :file: csv/use case-5/uc-monitoring-5.csv          
+   
+.. csv-table::
+   :file: csv/use case-5/uc-monitoring-6.csv          
+
+.. csv-table::
+   :file: csv/use case-5/uc-monitoring-7.csv          
+
+.. csv-table::
+   :file: csv/use case-5/uc-monitoring-8.csv          
+
+.. csv-table::
+   :file: csv/use case-5/uc-monitoring-9.csv          
+            
+
+6. UC-006
+=========
+.. csv-table::
+   :file: csv/use case-6/uc-monitoring-1.csv          
+
+.. csv-table::
+   :file: csv/use case-6/uc-monitoring-2.csv          
+
+.. csv-table::
+   :file: csv/use case-6/uc-monitoring-3.csv          
+
+.. csv-table::
+   :file: csv/use case-6/uc-monitoring-4.csv          
+
+.. csv-table::
+   :file: csv/use case-6/uc-monitoring-5.csv          
+   
+.. csv-table::
+   :file: csv/use case-6/uc-monitoring-6.csv          
+
+.. csv-table::
+   :file: csv/use case-6/uc-monitoring-7.csv          
+
+.. csv-table::
+   :file: csv/use case-6/uc-monitoring-8.csv          
+
+.. csv-table::
+   :file: csv/use case-6/uc-monitoring-9.csv          
+            
+
+7. UC-007
+=========
+.. csv-table::
+   :file: csv/use case-7/uc-monitoring-1.csv          
+
+.. csv-table::
+   :file: csv/use case-7/uc-monitoring-2.csv          
+
+.. csv-table::
+   :file: csv/use case-7/uc-monitoring-3.csv          
+
+.. csv-table::
+   :file: csv/use case-7/uc-monitoring-4.csv          
+
+.. csv-table::
+   :file: csv/use case-7/uc-monitoring-5.csv          
+   
+.. csv-table::
+   :file: csv/use case-7/uc-monitoring-6.csv          
+
+.. csv-table::
+   :file: csv/use case-7/uc-monitoring-7.csv          
+
+.. csv-table::
+   :file: csv/use case-7/uc-monitoring-8.csv          
+
+.. csv-table::
+   :file: csv/use case-7/uc-monitoring-9.csv          
+            
+
+8. UC-008
+=========
+.. csv-table::
+   :file: csv/use case-8/uc-monitoring-1.csv          
+
+.. csv-table::
+   :file: csv/use case-8/uc-monitoring-2.csv          
+
+.. csv-table::
+   :file: csv/use case-8/uc-monitoring-3.csv          
+
+.. csv-table::
+   :file: csv/use case-8/uc-monitoring-4.csv          
+
+.. csv-table::
+   :file: csv/use case-8/uc-monitoring-5.csv          
+   
+.. csv-table::
+   :file: csv/use case-8/uc-monitoring-6.csv          
+
+.. csv-table::
+   :file: csv/use case-8/uc-monitoring-7.csv          
+
+.. csv-table::
+   :file: csv/use case-8/uc-monitoring-8.csv          
+
+.. csv-table::
+   :file: csv/use case-8/uc-monitoring-9.csv          
+            
+
+9. UC-009
+=========
+.. csv-table::
+   :file: csv/use case-9/uc-monitoring-1.csv          
+
+.. csv-table::
+   :file: csv/use case-9/uc-monitoring-2.csv          
+
+.. csv-table::
+   :file: csv/use case-9/uc-monitoring-3.csv          
+
+.. csv-table::
+   :file: csv/use case-9/uc-monitoring-4.csv          
+
+.. csv-table::
+   :file: csv/use case-9/uc-monitoring-5.csv          
+   
+.. csv-table::
+   :file: csv/use case-9/uc-monitoring-6.csv          
+
+.. csv-table::
+   :file: csv/use case-9/uc-monitoring-7.csv          
+
+.. csv-table::
+   :file: csv/use case-9/uc-monitoring-8.csv          
+
+.. csv-table::
+   :file: csv/use case-9/uc-monitoring-9.csv          
+            
+
+10. UC-010
+==========
+.. csv-table::
+   :file: csv/use case-10/uc-monitoring-1.csv          
+
+.. csv-table::
+   :file: csv/use case-10/uc-monitoring-2.csv          
+
+.. csv-table::
+   :file: csv/use case-10/uc-monitoring-3.csv          
+
+.. csv-table::
+   :file: csv/use case-10/uc-monitoring-4.csv          
+
+.. csv-table::
+   :file: csv/use case-10/uc-monitoring-5.csv          
+   
+.. csv-table::
+   :file: csv/use case-10/uc-monitoring-6.csv          
+
+.. csv-table::
+   :file: csv/use case-10/uc-monitoring-7.csv          
+
+.. csv-table::
+   :file: csv/use case-10/uc-monitoring-8.csv          
+
+.. csv-table::
+   :file: csv/use case-10/uc-monitoring-9.csv          
+            
+
+11. UC-011
+==========
+.. csv-table::
+   :file: csv/use case-11/uc-monitoring-1.csv          
+
+.. csv-table::
+   :file: csv/use case-11/uc-monitoring-2.csv          
+
+.. csv-table::
+   :file: csv/use case-11/uc-monitoring-3.csv          
+
+.. csv-table::
+   :file: csv/use case-11/uc-monitoring-4.csv          
+
+.. csv-table::
+   :file: csv/use case-11/uc-monitoring-5.csv          
+   
+.. csv-table::
+   :file: csv/use case-11/uc-monitoring-6.csv          
+
+.. csv-table::
+   :file: csv/use case-11/uc-monitoring-7.csv          
+
+.. csv-table::
+   :file: csv/use case-11/uc-monitoring-8.csv          
+
+.. csv-table::
+   :file: csv/use case-11/uc-monitoring-9.csv          
+            
+
+12. UC-012
+==========
+.. csv-table::
+   :file: csv/use case-12/uc-monitoring-1.csv          
+
+.. csv-table::
+   :file: csv/use case-12/uc-monitoring-2.csv          
+
+.. csv-table::
+   :file: csv/use case-12/uc-monitoring-3.csv          
+
+.. csv-table::
+   :file: csv/use case-12/uc-monitoring-4.csv          
+
+.. csv-table::
+   :file: csv/use case-12/uc-monitoring-5.csv          
+   
+.. csv-table::
+   :file: csv/use case-12/uc-monitoring-6.csv          
+
+.. csv-table::
+   :file: csv/use case-12/uc-monitoring-7.csv          
+
+.. csv-table::
+   :file: csv/use case-12/uc-monitoring-8.csv          
+
+.. csv-table::
+   :file: csv/use case-12/uc-monitoring-9.csv          
+            
+
+13. UC-013
+==========
+.. csv-table::
+   :file: csv/use case-13/uc-monitoring-1.csv          
+
+.. csv-table::
+   :file: csv/use case-13/uc-monitoring-2.csv          
+
+.. csv-table::
+   :file: csv/use case-13/uc-monitoring-3.csv          
+
+.. csv-table::
+   :file: csv/use case-13/uc-monitoring-4.csv          
+
+.. csv-table::
+   :file: csv/use case-13/uc-monitoring-5.csv          
+   
+.. csv-table::
+   :file: csv/use case-13/uc-monitoring-6.csv          
+
+.. csv-table::
+   :file: csv/use case-13/uc-monitoring-7.csv          
+
+.. csv-table::
+   :file: csv/use case-13/uc-monitoring-8.csv          
+
+.. csv-table::
+   :file: csv/use case-13/uc-monitoring-9.csv          
+            
+
+14. UC-014
+==========
+.. csv-table::
+   :file: csv/use case-14/uc-monitoring-1.csv          
+
+.. csv-table::
+   :file: csv/use case-14/uc-monitoring-2.csv          
+
+.. csv-table::
+   :file: csv/use case-14/uc-monitoring-3.csv          
+
+.. csv-table::
+   :file: csv/use case-14/uc-monitoring-4.csv          
+
+.. csv-table::
+   :file: csv/use case-14/uc-monitoring-5.csv          
+   
+.. csv-table::
+   :file: csv/use case-14/uc-monitoring-6.csv          
+
+.. csv-table::
+   :file: csv/use case-14/uc-monitoring-7.csv          
+
+.. csv-table::
+   :file: csv/use case-14/uc-monitoring-8.csv          
+
+.. csv-table::
+   :file: csv/use case-14/uc-sipas-9.csv          
+            
+
+15. UC-015
+==========
+.. csv-table::
+   :file: csv/use case-15/uc-monitoring-1.csv          
+
+.. csv-table::
+   :file: csv/use case-15/uc-monitoring-2.csv          
+
+.. csv-table::
+   :file: csv/use case-15/uc-monitoring-3.csv          
+
+.. csv-table::
+   :file: csv/use case-15/uc-monitoring-4.csv          
+
+.. csv-table::
+   :file: csv/use case-15/uc-monitoring-5.csv          
+   
+.. csv-table::
+   :file: csv/use case-15/uc-monitoring-6.csv          
+
+.. csv-table::
+   :file: csv/use case-15/uc-monitoring-7.csv          
+
+.. csv-table::
+   :file: csv/use case-15/uc-monitoring-8.csv          
+
+.. csv-table::
+   :file: csv/use case-15/uc-monitoring-9.csv          
+            
+
+16. UC-016
+==========
+.. csv-table::
+   :file: csv/use case-16/uc-monitoring-1.csv          
+
+.. csv-table::
+   :file: csv/use case-16/uc-monitoring-2.csv          
+
+.. csv-table::
+   :file: csv/use case-16/uc-monitoring-3.csv          
+
+.. csv-table::
+   :file: csv/use case-16/uc-monitoring-4.csv          
+
+.. csv-table::
+   :file: csv/use case-16/uc-monitoring-5.csv          
+   
+.. csv-table::
+   :file: csv/use case-16/uc-monitoring-6.csv          
+
+.. csv-table::
+   :file: csv/use case-16/uc-monitoring-7.csv          
+
+.. csv-table::
+   :file: csv/use case-16/uc-monitoring-8.csv          
+
+.. csv-table::
+   :file: csv/use case-16/uc-monitoring-9.csv          
+            
+
+17. UC-017
+==========
+.. csv-table::
+   :file: csv/use case-17/uc-monitoring-1.csv          
+
+.. csv-table::
+   :file: csv/use case-17/uc-monitoring-2.csv          
+
+.. csv-table::
+   :file: csv/use case-17/uc-monitoring-3.csv          
+
+.. csv-table::
+   :file: csv/use case-17/uc-monitoring-4.csv          
+
+.. csv-table::
+   :file: csv/use case-17/uc-monitoring-5.csv          
+   
+.. csv-table::
+   :file: csv/use case-17/uc-monitoring-6.csv          
+
+.. csv-table::
+   :file: csv/use case-17/uc-monitoring-7.csv          
+
+.. csv-table::
+   :file: csv/use case-17/uc-monitoring-8.csv          
+
+.. csv-table::
+   :file: csv/use case-17/uc-monitoring-9.csv          
+            
+
+18. UC-018
+==========
+.. csv-table::
+   :file: csv/use case-18/uc-monitoring-1.csv          
+
+.. csv-table::
+   :file: csv/use case-18/uc-monitoring-2.csv          
+
+.. csv-table::
+   :file: csv/use case-18/uc-monitoring-3.csv          
+
+.. csv-table::
+   :file: csv/use case-18/uc-monitoring-4.csv          
+
+.. csv-table::
+   :file: csv/use case-18/uc-monitoring-5.csv          
+   
+.. csv-table::
+   :file: csv/use case-18/uc-monitoring-6.csv          
+
+.. csv-table::
+   :file: csv/use case-18/uc-monitoring-7.csv          
+
+.. csv-table::
+   :file: csv/use case-18/uc-monitoring-8.csv          
+
+.. csv-table::
+   :file: csv/use case-18/uc-monitoring-9.csv          
+            
+
+19. UC-019
+==========
+.. csv-table::
+   :file: csv/use case-19/uc-monitoring-1.csv          
+
+.. csv-table::
+   :file: csv/use case-19/uc-monitoring-2.csv          
+
+.. csv-table::
+   :file: csv/use case-19/uc-monitoring-3.csv          
+
+.. csv-table::
+   :file: csv/use case-19/uc-monitoring-4.csv          
+
+.. csv-table::
+   :file: csv/use case-19/uc-monitoring-5.csv          
+   
+.. csv-table::
+   :file: csv/use case-19/uc-monitoring-6.csv          
+
+.. csv-table::
+   :file: csv/use case-19/uc-monitoring-7.csv          
+
+.. csv-table::
+   :file: csv/use case-19/uc-monitoring-8.csv          
+
+.. csv-table::
+   :file: csv/use case-19/uc-monitoring-9.csv          
+
+D. Halaman Views
+################
+.. automodule:: monitoring.views
+   :members:
+   :undoc-members:
+E. User Guide
+#############
+:download:`panduan Monitoring dapat didownload di sini <files/user-guide-monitoring.pptx>`

@@ -1,0 +1,142 @@
+*******
+SARPRAS
+*******
+
+A. Context Diagram
+##################
+.. image:: images/context-diagram.jpg
+   :width: 600      
+
+B. Class Diagram
+################
+.. image:: images/class-diagram.png
+   :width: 600      
+
+C. Use Case
+###########
+
+C.1. Gambar Use Case Diagram
+****************************
+.. image:: images/use-case.jpg
+   :width: 600      
+
+C.2. Tabel Use Case
+*******************
+.. csv-table::
+   :file: csv/use-case.csv    
+   :header-rows: 1
+
+C.3. Detail Use Case Diagram
+****************************
+
+1. UC-001
+=========
+.. csv-table::
+   :file: csv/uc-001/uc-sipas-1.csv    
+   :header-rows: 1
+
+.. csv-table::
+   :file: csv/uc-001/uc-sipas-2.csv    
+   :header-rows: 1
+
+.. csv-table::
+   :file: csv/uc-001/uc-sipas-3.csv    
+   :header-rows: 2
+
+.. csv-table::
+   :file: csv/uc-001/uc-sipas-4.csv    
+   :header-rows: 2
+
+.. csv-table::
+   :file: csv/uc-001/uc-sipas-5.csv    
+   :header-rows: 2
+   
+.. csv-table::
+   :file: csv/uc-001/uc-sipas-6.csv    
+   :header-rows: 1
+
+.. csv-table::
+   :file: csv/uc-001/uc-sipas-7.csv    
+   :header-rows: 1
+
+.. csv-table::
+   :file: csv/uc-001/uc-sipas-8.csv    
+   :header-rows: 1
+
+.. csv-table::
+   :file: csv/uc-001/uc-sipas-9.csv    
+   :header-rows: 1   
+
+2. UC-002
+=========
+.. csv-table::
+   :file: csv/uc-002/uc-sipas-1.csv    
+   :header-rows: 1
+
+.. csv-table::
+   :file: csv/uc-002/uc-sipas-2.csv    
+   :header-rows: 1
+
+.. csv-table::
+   :file: csv/uc-002/uc-sipas-3.csv    
+   :header-rows: 2
+
+.. csv-table::
+   :file: csv/uc-002/uc-sipas-4.csv    
+   :header-rows: 2
+
+.. csv-table::
+   :file: csv/uc-002/uc-sipas-5.csv    
+   :header-rows: 2
+   
+.. csv-table::
+   :file: csv/uc-002/uc-sipas-6.csv    
+   :header-rows: 1
+
+.. csv-table::
+   :file: csv/uc-002/uc-sipas-7.csv    
+   :header-rows: 1
+
+.. csv-table::
+   :file: csv/uc-002/uc-sipas-8.csv    
+   :header-rows: 1
+
+.. csv-table::
+   :file: csv/uc-002/uc-sipas-9.csv    
+   :header-rows: 1   
+
+
+.. D. Alamat-Alamat URL
+.. ####################
+.. .. automodule:: surat.urls
+..    :members:
+..    :undoc-members:
+
+
+.. E. Halaman Views
+.. ################
+.. .. automodule:: surat.views
+..    :members:
+..    :undoc-members:
+
+
+F. User Guide
+#############
+
+F.1. Pejabat
+************
+
+1. Login
+========
+1. Masuk kedalam laman www.sarpras.ums.ac.id
+2. Pilih menu login.
+3. Login dengan mengisikan username, password, kode kemanan (gatcha).
+4. Klik tombol login.
+
+.. image:: images/user-guide/1.png
+   :width: 600      
+
+1. Jika username, password, serta kode keamanan benar diisikan maka, akan lanjut ke dalam menu homebase ASET.
+
+.. image:: images/user-guide/2.png
+   :width: 600      

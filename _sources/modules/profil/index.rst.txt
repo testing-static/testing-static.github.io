@@ -1,0 +1,412 @@
+*********
+3. PROFIL
+*********
+
+A. Context Diagram
+##################
+.. image:: images/context-diagram.png
+   :width: 700      
+
+B. Class Diagram
+################
+.. image:: images/class-diagram.PNG
+   :width: 600      
+
+C. Use Case
+###########
+
+C.1. Gambar Use Case Diagram
+****************************
+.. image:: images/use-case-diagram.png
+   :width: 900      
+
+C.2. Tabel Use Case
+*******************
+.. csv-table::
+   :file: csv/use-case.csv    
+   :header-rows: 1
+
+C.3. Detail Use Case Diagram
+****************************
+1. UC-01
+=============
+.. csv-table::
+   :file: csv/use case-1/uc-profil-0.csv          
+.. csv-table::
+   :file: csv/use case-1/uc-profil-1.csv
+.. csv-table::
+   :file: csv/use case-1/uc-profil-2.csv
+.. csv-table::
+   :file: csv/use case-1/uc-profil-3.csv
+.. csv-table::
+   :file: csv/use case-1/uc-profil-4.csv
+.. csv-table::
+   :file: csv/use case-1/uc-profil-5.csv
+.. csv-table::
+   :file: csv/use case-1/uc-profil-6.csv
+.. csv-table::
+   :file: csv/use case-1/uc-profil-7.csv 
+.. csv-table::
+   :file: csv/use case-1/uc-profil-8.csv          
+            
+
+2. UC-02
+=============
+.. csv-table::
+   :file: csv/use case-2/uc-profil-0.csv          
+.. csv-table::
+   :file: csv/use case-2/uc-profil-1.csv
+.. csv-table::
+   :file: csv/use case-2/uc-profil-2.csv
+.. csv-table::
+   :file: csv/use case-2/uc-profil-3.csv
+.. csv-table::
+   :file: csv/use case-2/uc-profil-4.csv
+.. csv-table::
+   :file: csv/use case-2/uc-profil-5.csv
+.. csv-table::
+   :file: csv/use case-2/uc-profil-6.csv
+.. csv-table::
+   :file: csv/use case-2/uc-profil-7.csv 
+.. csv-table::
+   :file: csv/use case-2/uc-profil-8.csv          
+            
+
+3. UC-03
+=============
+.. csv-table::
+   :file: csv/use case-3/uc-profil-0.csv          
+.. csv-table::
+   :file: csv/use case-3/uc-profil-1.csv
+.. csv-table::
+   :file: csv/use case-3/uc-profil-2.csv
+.. csv-table::
+   :file: csv/use case-3/uc-profil-3.csv
+.. csv-table::
+   :file: csv/use case-3/uc-profil-4.csv
+.. csv-table::
+   :file: csv/use case-3/uc-profil-5.csv
+.. csv-table::
+   :file: csv/use case-3/uc-profil-6.csv
+.. csv-table::
+   :file: csv/use case-3/uc-profil-7.csv 
+.. csv-table::
+   :file: csv/use case-3/uc-profil-8.csv          
+            
+
+4. UC-04
+=============
+.. csv-table::
+   :file: csv/use case-4/uc-profil-0.csv          
+.. csv-table::
+   :file: csv/use case-4/uc-profil-1.csv
+.. csv-table::
+   :file: csv/use case-4/uc-profil-2.csv
+.. csv-table::
+   :file: csv/use case-4/uc-profil-3.csv
+.. csv-table::
+   :file: csv/use case-4/uc-profil-4.csv
+.. csv-table::
+   :file: csv/use case-4/uc-profil-5.csv
+.. csv-table::
+   :file: csv/use case-4/uc-profil-6.csv
+.. csv-table::
+   :file: csv/use case-4/uc-profil-7.csv 
+.. csv-table::
+   :file: csv/use case-4/uc-profil-8.csv          
+            
+
+5. UC-05
+=============
+.. csv-table::
+   :file: csv/use case-5/uc-profil-0.csv          
+.. csv-table::
+   :file: csv/use case-5/uc-profil-1.csv
+.. csv-table::
+   :file: csv/use case-5/uc-profil-2.csv
+.. csv-table::
+   :file: csv/use case-5/uc-profil-3.csv
+.. csv-table::
+   :file: csv/use case-5/uc-profil-4.csv
+.. csv-table::
+   :file: csv/use case-5/uc-profil-5.csv
+.. csv-table::
+   :file: csv/use case-5/uc-profil-6.csv
+.. csv-table::
+   :file: csv/use case-5/uc-profil-7.csv 
+.. csv-table::
+   :file: csv/use case-5/uc-profil-8.csv          
+            
+
+6. UC-06
+=============
+.. csv-table::
+   :file: csv/use case-6/uc-profil-0.csv          
+.. csv-table::
+   :file: csv/use case-6/uc-profil-1.csv
+.. csv-table::
+   :file: csv/use case-6/uc-profil-2.csv
+.. csv-table::
+   :file: csv/use case-6/uc-profil-3.csv
+.. csv-table::
+   :file: csv/use case-6/uc-profil-4.csv
+.. csv-table::
+   :file: csv/use case-6/uc-profil-5.csv
+.. csv-table::
+   :file: csv/use case-6/uc-profil-6.csv
+.. csv-table::
+   :file: csv/use case-6/uc-profil-7.csv 
+.. csv-table::
+   :file: csv/use case-6/uc-profil-8.csv          
+            
+
+7. UC-07
+=============
+.. csv-table::
+   :file: csv/use case-7/uc-profil-0.csv          
+.. csv-table::
+   :file: csv/use case-7/uc-profil-1.csv
+.. csv-table::
+   :file: csv/use case-7/uc-profil-2.csv
+.. csv-table::
+   :file: csv/use case-7/uc-profil-3.csv
+.. csv-table::
+   :file: csv/use case-7/uc-profil-4.csv
+.. csv-table::
+   :file: csv/use case-7/uc-profil-5.csv
+.. csv-table::
+   :file: csv/use case-7/uc-profil-6.csv
+.. csv-table::
+   :file: csv/use case-7/uc-profil-7.csv 
+.. csv-table::
+   :file: csv/use case-7/uc-profil-8.csv          
+            
+
+8. UC-08
+=============
+.. csv-table::
+   :file: csv/use case-8/uc-profil-0.csv          
+.. csv-table::
+   :file: csv/use case-8/uc-profil-1.csv
+.. csv-table::
+   :file: csv/use case-8/uc-profil-2.csv
+.. csv-table::
+   :file: csv/use case-8/uc-profil-3.csv
+.. csv-table::
+   :file: csv/use case-8/uc-profil-4.csv
+.. csv-table::
+   :file: csv/use case-8/uc-profil-5.csv
+.. csv-table::
+   :file: csv/use case-8/uc-profil-6.csv
+.. csv-table::
+   :file: csv/use case-8/uc-profil-7.csv 
+.. csv-table::
+   :file: csv/use case-8/uc-profil-8.csv          
+            
+
+9. UC-09
+=============
+.. csv-table::
+   :file: csv/use case-9/uc-profil-0.csv          
+.. csv-table::
+   :file: csv/use case-9/uc-profil-1.csv
+.. csv-table::
+   :file: csv/use case-9/uc-profil-2.csv
+.. csv-table::
+   :file: csv/use case-9/uc-profil-3.csv
+.. csv-table::
+   :file: csv/use case-9/uc-profil-4.csv
+.. csv-table::
+   :file: csv/use case-9/uc-profil-5.csv
+.. csv-table::
+   :file: csv/use case-9/uc-profil-6.csv
+.. csv-table::
+   :file: csv/use case-9/uc-profil-7.csv 
+.. csv-table::
+   :file: csv/use case-9/uc-profil-8.csv          
+            
+
+10. UC-010
+=============
+.. csv-table::
+   :file: csv/use case-10/uc-profil-0.csv          
+.. csv-table::
+   :file: csv/use case-10/uc-profil-1.csv
+.. csv-table::
+   :file: csv/use case-10/uc-profil-2.csv
+.. csv-table::
+   :file: csv/use case-10/uc-profil-3.csv
+.. csv-table::
+   :file: csv/use case-10/uc-profil-4.csv
+.. csv-table::
+   :file: csv/use case-10/uc-profil-5.csv
+.. csv-table::
+   :file: csv/use case-10/uc-profil-6.csv
+.. csv-table::
+   :file: csv/use case-10/uc-profil-7.csv 
+.. csv-table::
+   :file: csv/use case-10/uc-profil-8.csv          
+            
+
+11. UC-011
+=============
+.. csv-table::
+   :file: csv/use case-11/uc-profil-0.csv          
+.. csv-table::
+   :file: csv/use case-11/uc-profil-1.csv
+.. csv-table::
+   :file: csv/use case-11/uc-profil-2.csv
+.. csv-table::
+   :file: csv/use case-11/uc-profil-3.csv
+.. csv-table::
+   :file: csv/use case-11/uc-profil-4.csv
+.. csv-table::
+   :file: csv/use case-11/uc-profil-5.csv
+.. csv-table::
+   :file: csv/use case-11/uc-profil-6.csv
+.. csv-table::
+   :file: csv/use case-11/uc-profil-7.csv 
+.. csv-table::
+   :file: csv/use case-11/uc-profil-8.csv          
+            
+
+12. UC-012
+=============
+.. csv-table::
+   :file: csv/use case-12/uc-profil-0.csv          
+.. csv-table::
+   :file: csv/use case-12/uc-profil-1.csv
+.. csv-table::
+   :file: csv/use case-12/uc-profil-2.csv
+.. csv-table::
+   :file: csv/use case-12/uc-profil-3.csv
+.. csv-table::
+   :file: csv/use case-12/uc-profil-4.csv
+.. csv-table::
+   :file: csv/use case-12/uc-profil-5.csv
+.. csv-table::
+   :file: csv/use case-12/uc-profil-6.csv
+.. csv-table::
+   :file: csv/use case-12/uc-profil-7.csv 
+.. csv-table::
+   :file: csv/use case-12/uc-profil-8.csv          
+            
+
+13. UC-013
+=============
+.. csv-table::
+   :file: csv/use case-13/uc-profil-0.csv          
+.. csv-table::
+   :file: csv/use case-13/uc-profil-1.csv
+.. csv-table::
+   :file: csv/use case-13/uc-profil-2.csv
+.. csv-table::
+   :file: csv/use case-13/uc-profil-3.csv
+.. csv-table::
+   :file: csv/use case-13/uc-profil-4.csv
+.. csv-table::
+   :file: csv/use case-13/uc-profil-5.csv
+.. csv-table::
+   :file: csv/use case-13/uc-profil-6.csv
+.. csv-table::
+   :file: csv/use case-13/uc-profil-7.csv 
+.. csv-table::
+   :file: csv/use case-13/uc-profil-8.csv          
+            
+
+14. UC-014
+=============
+.. csv-table::
+   :file: csv/use case-14/uc-profil-0.csv          
+.. csv-table::
+   :file: csv/use case-14/uc-profil-1.csv
+.. csv-table::
+   :file: csv/use case-14/uc-profil-2.csv
+.. csv-table::
+   :file: csv/use case-14/uc-profil-3.csv
+.. csv-table::
+   :file: csv/use case-14/uc-profil-4.csv
+.. csv-table::
+   :file: csv/use case-14/uc-profil-5.csv
+.. csv-table::
+   :file: csv/use case-14/uc-profil-6.csv
+.. csv-table::
+   :file: csv/use case-14/uc-profil-7.csv 
+.. csv-table::
+   :file: csv/use case-14/uc-profil-8.csv          
+            
+
+15. UC-015
+=============
+.. csv-table::
+   :file: csv/use case-15/uc-profil-0.csv          
+.. csv-table::
+   :file: csv/use case-15/uc-profil-1.csv
+.. csv-table::
+   :file: csv/use case-15/uc-profil-2.csv
+.. csv-table::
+   :file: csv/use case-15/uc-profil-3.csv
+.. csv-table::
+   :file: csv/use case-15/uc-profil-4.csv
+.. csv-table::
+   :file: csv/use case-15/uc-profil-5.csv
+.. csv-table::
+   :file: csv/use case-15/uc-profil-6.csv
+.. csv-table::
+   :file: csv/use case-15/uc-profil-7.csv 
+.. csv-table::
+   :file: csv/use case-15/uc-profil-8.csv          
+            
+
+16. UC-016
+=============
+.. csv-table::
+   :file: csv/use case-16/uc-profil-0.csv          
+.. csv-table::
+   :file: csv/use case-16/uc-profil-1.csv
+.. csv-table::
+   :file: csv/use case-16/uc-profil-2.csv
+.. csv-table::
+   :file: csv/use case-16/uc-profil-3.csv
+.. csv-table::
+   :file: csv/use case-16/uc-profil-4.csv
+.. csv-table::
+   :file: csv/use case-16/uc-profil-5.csv
+.. csv-table::
+   :file: csv/use case-16/uc-profil-6.csv
+.. csv-table::
+   :file: csv/use case-16/uc-profil-7.csv 
+.. csv-table::
+   :file: csv/use case-16/uc-profil-8.csv          
+            
+
+17. UC-017
+=============
+.. csv-table::
+   :file: csv/use case-17/uc-profil-0.csv          
+.. csv-table::
+   :file: csv/use case-17/uc-profil-1.csv
+.. csv-table::
+   :file: csv/use case-17/uc-profil-2.csv
+.. csv-table::
+   :file: csv/use case-17/uc-profil-3.csv
+.. csv-table::
+   :file: csv/use case-17/uc-profil-4.csv
+.. csv-table::
+   :file: csv/use case-17/uc-profil-5.csv
+.. csv-table::
+   :file: csv/use case-17/uc-profil-6.csv
+.. csv-table::
+   :file: csv/use case-17/uc-profil-7.csv 
+.. csv-table::
+   :file: csv/use case-17/uc-profil-8.csv      
+       
+D. Halaman Views
+################
+.. automodule:: profil.views
+   :members:
+   :undoc-members:
+
+E. User Guide
+#############
+:download:`panduan Profil dapat didownload di sini <files/user-guide-profil.pptx>`

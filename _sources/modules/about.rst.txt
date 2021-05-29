@@ -1,0 +1,5 @@
+#############
+Tentang MyUMS
+#############
+
+Adalah sebuah website satu pintu untuk menuju banyak aplikasi UMS.
