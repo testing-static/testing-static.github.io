@@ -9,7 +9,7 @@ A. Context Diagram
 
 B. Class Diagram
 ################
-.. image:: images/class-diagram.PNG
+.. image:: images/class-diagram.png
    :width: 600      
 
 C. Use Case
